@@ -1,0 +1,239 @@
+//
+// White Spektrum ( _primary.scss )
+//
+// @package     White Spektrum
+// @copyright   Copyright (C) 2014-2020. Benjamin Lu
+// @license     GNU General Public License v2 or later ( https://www.gnu.org/licenses/gpl-2.0.html )
+// @author      Benjamin Lu ( https://benjlu.com )
+//
+
+.primary-navigation {
+	display: block;
+	width: 100%;
+
+	ul {
+		display: block;
+		list-style: none;
+		margin: 0;
+	}
+
+	li {
+		position: relative;
+	}
+
+	ul ul {
+		display: none;
+		margin-left: 0.5em;
+	}
+
+	a {
+		color: #ffffff;
+		display: block;
+		line-height: 1.5em;
+		padding: 0.5em 1em;
+		position: relative;
+		text-decoration: none;
+	}
+
+	a:hover,
+	a:focus {
+		background: #ffffff;
+		color: #000000;
+	}
+
+	ul .toggled-on {
+		display: block;
+	}
+
+	.current-menu-item > a,
+	.current-menu-ancestor > a,
+	.current_page_item > a,
+	.current_page_ancestor > a {
+		font-weight: 700;
+	}
+
+	.nav-menu {
+		background: #000000;
+		padding: 1em;
+		margin-bottom: 3em;
+	}
+
+	.nav-menu > ul > li:first-child,
+	.nav-menu > li:first-child {
+		border-top: 0;
+	}
+
+	.menu-item-has-children > a,
+	.page_item_has_children > a{
+		padding-right: 3em;
+	}
+
+	&.toggled {
+		bottom: 0;
+		padding: 1em;
+		position: fixed;
+		z-index: 1;
+	}
+	
+	&.toggled ul {
+		max-height: calc(100vh - 8em);
+		overflow-y: auto;
+	}
+	
+	&.toggled ul ul {
+		display: none;
+	}
+	
+	&.toggled ul ul.toggled-on,
+	&.toggled ul ul.toggled-on > ul {
+		display: block;
+	}
+}
+
+.dropdown-toggle {
+	background: #000000;
+	border: 0.063em solid #ffffff;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	color: #ffffff;
+	font-family: 'Font Awesome 5 Free';
+	height: 2em;
+	padding: 0;
+	position: absolute;
+	right: 0.250em;
+	top: 0.188em;
+	width: 2em;
+}
+
+.dropdown-toggle:after {
+	font-size: 1.125em;
+	content: "\f078";
+	left: 0;
+	line-height: 1.875em;
+	position: relative;
+	top: 0;
+	width: 1.875em;
+}
+
+.dropdown-toggle:hover,
+.dropdown-toggle:focus {
+	background: #ffffff;
+	color: #000000;
+}
+
+.dropdown-toggle.toggle-on:after {
+	content: "\f077";
+}
+
+.menu-toggle {
+	background-color: #000;
+	border: solid 2px #fff;
+	bottom: 1em;
+	color: #fff;
+	display: none;
+	font-size: 1em;
+	left: 1em;
+	padding: 0.4em;
+	position: fixed;
+	transition: all ease-out 400ms;
+	z-index: 100;
+}
+
+.menu-toggle.hide {
+	bottom: -2.5em;
+}
+
+.toggled .menu-toggle.hide {
+	bottom: 1em;
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+	text-decoration: underline;
+}
+
+
+@media screen and ( min-width: 73.125em ) {
+	.primary-navigation {
+		ul {
+			text-align: center;
+
+			ul {
+
+				&.toggled-on {
+					background: #000000;
+					display: block;
+					padding-left: 0;
+					position: absolute;
+					right: 0;
+					width: 17em;
+					z-index: 10;
+				}
+
+				ul {
+					&.toggled-on {
+						right: 0;
+						padding-left: 0;
+						position: relative;
+					}
+
+					a {
+						padding-left: 2em;
+					}
+				}
+
+				li {
+					a {
+						color: #ffffff;
+					}
+				}
+			}
+		}
+
+		&.toggled-on {
+			padding-left: 0;
+		}
+
+		li {
+			display: inline-block;
+	
+			li {
+				display: block;
+				text-align: left;
+	
+				a {
+					&:hover,
+					&:focus {
+						background: #eeeeee;
+						color: #000000;
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	
+		a {
+			color: #000000;
+
+			&:hover,
+			&:focus {
+				background: transparent;
+				color: #000000;
+				outline: 0.063em solid #b3b3b3;
+				text-decoration: underline;
+			}
+		}
+
+		.nav-menu {
+			background: #ffffff;
+			padding: 0.5em;
+			margin-bottom: 0;
+		}
+		
+		.dropdown-toggle:hover {
+			background: #000;
+			color: #ffffff;
+		}
+	}
+}
