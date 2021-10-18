@@ -15,22 +15,18 @@
  *
  * This will create an instance of the framework allowing you to initialize the theme.
  */
-$white_spektrum = Benlumia007\Backdrop\Framework::get_instance();
+$white_spektrum = new Benlumia007\Backdrop\Framework();
 
-$white_spektrum->menus = new Benlumia007\Backdrop\Menu\Menu(
-	$args = [
-		'primary' => esc_html__( 'Primary Navigation', 'initiator' ),
-	]
-);
+/**
+ * Register default providers
+ */
+$white_spektrum->provider( Benlumia007\Backdrop\FontAwesome\Provider::class );
+$white_spektrum->provider( Benlumia007\Backdrop\GoogleFonts\Provider::class );
+$white_spektrum->provider( Benlumia007\Backdrop\Template\Hierarchy\Provider::class );
+$white_spektrum->provider( Benlumia007\Backdrop\Template\Manager\Provider::class );
+$white_spektrum->provider( Benlumia007\Backdrop\Template\View\Provider::class );
 
-$white_spektrum->sidebars = new Benlumia007\Backdrop\Sidebar\Sidebar(
-	$args = [
-		'primary' => [
-			'name' => esc_html__( 'Primary Sidebar', 'initiator' ),
-			'desc' => esc_html__( 'Test', 'initiator' ),
-		],
-	]
-);
-
-$white_spektrum->admin = new WhiteSpektrum\Component\Admin();
-$white_spektrum->customize = new WhiteSpektrum\Component\Customize();
+/**
+ * Boot the Framework
+ */
+$white_spektrum->boot();

@@ -1,11 +1,12 @@
 <?php
 /**
- * White Spektrum ( functions-setup.php )
+ * Theme Setup
  *
- * @package     White Spektrum
- * @copyright   Copyright (C) 2014-2020. Benjamin Lu
- * @license     GNU General Public License v2 or later ( https://www.gnu.org/licenses/gpl-2.0.html )
- * @author      Benjamin Lu ( https://benjlu.com )
+ * @package   White Spektrum
+ * @author    Benjamin Lu ( benlumia007@gmail.com )
+ * @copyright Copyright (C) 2014-2021. Benjamin Lu
+ * @license   https://www.gnu.org/licenses/gpl-2.0.html
+ * @link      https://luthemes.com/portfolio/silver-quantum
  */
 
 /**
@@ -31,7 +32,7 @@ add_action( 'after_setup_theme', function() {
 		 * Content width is a theme feature, when set, it can set the maximum allow width for any content in teh theme like
 		 * oEmbeds and images added to posts.
 		 */
-		$GLOBALS['content_width'] = 810;
+		$GLOBALS['content_width'] = 800;
 
 		/**
 		 * By adding add_theme_support( 'title-tag' );, this will let WordPress manage all document titles and should be use instead of wp_title();.
@@ -48,16 +49,13 @@ add_action( 'after_setup_theme', function() {
 		 * By adding add_theme_support( 'html5', arrayy() );, this feature when enabled allows the user use of HTML5 markup for
 		 * comment list, comment forms, search forms, galleries, and captions.
 		 */
-		add_theme_support(
-			'html5',
-			array(
-				'comment-list',
-				'comment-form',
-				'search-form',
-				'gallery',
-				'caption',
-			)
-		);
+		add_theme_support( 'html5', array(
+			'comment-list',
+			'comment-form',
+			'search-form',
+			'gallery',
+			'caption',
+		) );
 
 		/**
 		 * By adding add_theme_support( 'post-thumbnails' );, this feature when enabled allows you to setup featured images
@@ -79,22 +77,6 @@ add_action( 'after_setup_theme', function() {
 		 * By add_image_size( 'white-spektrum-large-thumbnails', 1170, 614, true );. This should be used for content that has no sidebars.
 		 */
 		add_image_size( 'white-spektrum-large-thumbnails', 1170, 614, true );
-
-		/**
-		 * By add_theme_support( 'wp-block-styles' );. This should enable block styles on the frontend.
-		 */
-		add_theme_support( 'wp-block-styles' );
-
-		/**
-		 * By adding add_theme_support( 'editor-styles' ); and add_editor_style(); to enable styles in the backend of the editor.
-		 */
-		add_theme_support( 'editor-styles' );
-		add_editor_style( 'public/css/editor-styles.css' );
-
-		/**
-		 * By adding add_theme_support( 'align-wide' );. This will enable alignwide and alignfull.
-		 */
-		add_theme_support( 'align-wide' );
 
 		/**
 		 * Load theme translation.
@@ -131,20 +113,25 @@ add_action( 'after_setup_theme', function() {
 		);
 } );
 
-/**
- * Add Support Custom Background
- */
-add_action( 'after_setup_theme', function() {
+add_action( 'backdrop/templates/register', function( $templates ) {
+	$templates->add(
+		'template-custom-sidebar.php', [
+			'label' => esc_html__( 'Custom Sidebar', 'silver-quantum' ),
+			'post_types' => [ 'page' ]
+		]
+	);
 
-	add_theme_support( 'custom-background', [
-		'default-image'          => '',
-		'default-preset'         => 'default',
-		'default-position-x'     => 'left',
-		'default-position-y'     => 'top',
-		'default-size'           => 'auto',
-		'default-repeat'         => 'repeat',
-		'default-attachment'     => 'scroll',
-		'default-color'          => '',
-	] );
+	$templates->add(
+		'template-left-sidebar.php', [
+			'label' => esc_html__( 'Left Sidebar', 'silver-quantum' ),
+			'post_types' => [ 'page' ]
+		]
+	);
 
+	$templates->add(
+		'template-right-sidebar.php', [
+			'label' => esc_html__( 'Right Sidebar', 'silver-quantum' ),
+			'post_types' => [ 'page' ]
+		]
+	);
 } );

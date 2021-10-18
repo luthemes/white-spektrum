@@ -1,5 +1,5 @@
 //
-// Initiator ( settings/_index.scss )
+// Initiator ( elements/_index.scss )
 //
 // @package   Initiator
 // @copyright Copyright (C) 2019-2021. Benjamin Lu
@@ -7,4 +7,5 @@
 // @author    Benjamin Lu ( https://getbenonit.com )
 //
 
-@import 'fonts/index';
+@import 'defaults/index';
+@import 'headings/index';

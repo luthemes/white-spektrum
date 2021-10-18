@@ -18,20 +18,20 @@
 .left-sidebar {
 	.content-area {
 		float: right;
-		width: $content_area_width; // 73.125em;
+		width: 73.125rem; // 73.125em;
 	}
 }
 
 .right-sidebar {
 	.content-area {
 		float: left;
-		width: $content_area_width; // 73.125em
+		width: 73.125rem; // 73.125em
 	}
 }
 
 .no-sidebar {
 	.content-area {
 		margin: 0 auto;
-		max-width: $content_area_width; // 73.125em
+		max-width: 73.125rem; // 73.125em
 	}
 }

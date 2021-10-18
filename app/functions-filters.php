@@ -95,3 +95,10 @@ add_filter(
 		return $title;
 	}
 );
+
+/**
+ * Here, we are going to setup template path
+ */
+add_filter( 'backdrop/template/path', function() {
+	return 'public/views';
+} );

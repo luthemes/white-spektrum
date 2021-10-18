@@ -13,11 +13,11 @@
 		<?php if ( is_sticky() && is_home() && ! is_paged() ) { ?>
 			<?php printf( '<span class="sticky-post">%1$s</span>', esc_html__( 'Featured', 'initiator' ) ); ?>
 		<?php } ?>
-		<?php Benlumia007\Backdrop\Entry\display_title(); ?>
+		<?php Benlumia007\Backdrop\Theme\Entry\display_title(); ?>
 		<div class="entry-metadata">
-			<?php Benlumia007\Backdrop\Entry\display_author(); ?>
-			<?php Benlumia007\Backdrop\Entry\display_date(); ?>
-			<?php Benlumia007\Backdrop\Entry\display_comments_link(); ?>
+			<?php Benlumia007\Backdrop\Theme\Entry\display_author(); ?>
+			<?php Benlumia007\Backdrop\Theme\Entry\display_date(); ?>
+			<?php Benlumia007\Backdrop\Theme\Entry\display_comments_link(); ?>
 		</div>
 	</header>
 	<div class="entry-excerpt">

@@ -1,11 +1,11 @@
 {
-    "name": "benlumia007/initiator",
-    "description": "Initiator is a starter theme designed to help theme authors using Backdrop Core Framework.",
+    "name": "benlumia007/white-spektrum",
+    "description": "White Spektrum is a starter theme designed to help theme authors using Backdrop Core Framework.",
     "keywords": [
         "wordpress",
         "wordpress-theme"
     ],
-    "homepage": "https://github.com/benlumia007/initiator",
+    "homepage": "https://github.com/benlumia007/white-spektrum",
     "license": "GPL-2.0-or-later",
     "authors": [
         {
@@ -26,7 +26,16 @@
 		]
     },
     "require": {
-        "php": ">=5.6",
-        "benlumia007/backdrop-core": "^1.0.0"
-	}
+        "php": ">=7.3.24",
+        "benlumia007/backdrop": "v3.0.0.x-dev",
+        "benlumia007/backdrop-customize": "v1.0.0.x-dev",
+        "benlumia007/backdrop-customize-helpers": "v1.0.0.x-dev",
+        "benlumia007/backdrop-fontawesome": "v1.0.0.x-dev",
+        "benlumia007/backdrop-googlefonts": "v1.0.0.x-dev",
+        "benlumia007/backdrop-template-helpers": "v1.0.0.x-dev",
+        "benlumia007/backdrop-template-hierarchy": "v1.0.0.x-dev",
+        "benlumia007/backdrop-template-manager": "v1.0.0.x-dev",
+        "benlumia007/backdrop-template-view": "v1.0.0.x-dev",
+        "benlumia007/backdrop-theme": "v1.0.0.x-dev"
+    }
 }

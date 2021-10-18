@@ -1,13 +1,48 @@
+////
+/// Primary Screen Stylesheet
+///
+/// This is the primary stylesheet. We don't actually write any styles here.
+/// Instead, we import all of our styles from partials within the sub-folders.
+///
+/// @group  Styles
+/// @author Benjamin Lu <benlumia007@gmail.com>
+/// @link   https://getbenonit.com/themes/initiator
+////
+
+// -----------------------------------------------------------------------------
+// Import settings.
+// -----------------------------------------------------------------------------
 //
-// White Spektrum ( screen.scss )
-//
-// @package     White Spektrum
-// @copyright   Copyright (C) 2014-2020. Benjamin Lu
-// @license     GNU General Public License v2 or later ( https://www.gnu.org/licenses/gpl-2.0.html )
-// @author      Benjamin Lu ( https://benjlu.com )
-//
+// Settings handle the configuration and variables.
 
 @import 'settings/index';
-@import 'tools/index';
-@import 'base/index';
+
+// -----------------------------------------------------------------------------
+// Import element styles.
+// -----------------------------------------------------------------------------
+//
+// Elements are (or should be) class-less designs for the base HTML elements.
+// The styles in this folder should only handle the defaults. More specific
+// styles should be handled later in the cascade.
+
+@import 'elements/index';
+
+// -----------------------------------------------------------------------------
+// Import component styles.
+// -----------------------------------------------------------------------------
+//
+// This is the first point that real CSS is output. Resets, normalization,
+// fonts, etc. are best handled here. These are the base styles that other
+// styles will build upon.
+
 @import 'components/index';
+
+// -----------------------------------------------------------------------------
+// Import component styles.
+// -----------------------------------------------------------------------------
+//
+// This is the first point that real CSS is output. Resets, normalization,
+// fonts, etc. are best handled here. These are the base styles that other
+// styles will build upon.
+
+@import 'utilities/index';
