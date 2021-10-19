@@ -1,6 +1,6 @@
 <?php
 /**
- * Main Template File - index.php
+ * The single post template is used to render a single post.
  *
  * @package   White Spektrum
  * @author    Benjamin Lu ( benlumia007@gmail.com )
