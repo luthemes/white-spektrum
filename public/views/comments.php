@@ -1,5 +1,10 @@
 <?php
 /**
+ * The template for displaying comments
+ * 
+ * The template tht displays a section of a page that contains
+ * both the current comments and the form.
+ * 
  * @package   White Spektrum
  * @author    Benjamin Lu ( benlumia007@gmail.com )
  * @copyright Copyright (C) 2014-2021. Benjamin Lu
@@ -21,29 +26,27 @@ if ( post_password_required() ) {
 				<?php $count = get_comments_number(); ?>
 				<?php
 				if ( '1' === $count ) {
-					printf( esc_html_x( 'One Comment', 'comments title', 'initiator' ) );
+					printf( esc_html_x( 'One Comment', 'comments title', 'white-spektrum' ) );
 				} else {
 					// Translators: 1 = counts.
-					printf( _nx( '%1$s Comment', '%1$s Comments', absint( $count ), 'comments title', 'initiator' ), absint( number_format_i18n( $count ) ) ); // phpcs:ignore
+					printf( _nx( '%1$s Comment', '%1$s Comments', absint( $count ), 'comments title', 'white-spektrum' ), absint( number_format_i18n( $count ) ) ); // phpcs:ignore
 				}
 				?>
 			</h2>
 		<?php } ?>
 		<ol class="comment-list">
 			<?php
-				wp_list_comments(
-					array(
-						'style'       => 'ol',
-						'short_ping'  => true,
-						'avatar_size' => 70,
-					)
-				);
+				wp_list_comments( [
+                    'style'       => 'ol',
+                    'short_ping'  => true,
+                    'avatar_size' => 70,
+                ] );
 			?>
 		</ol>
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) { ?>
 			<nav id="comment-nav-below" class="comment-navigation" role="navigation">
-				<div class="comment-previous"><?php previous_comments_link( '<i class="fa fa-arrow-circle-o-left"></i> ' . esc_html__( 'Older Comments', 'initiator' ) ); ?></div>
-				<div class="comment-next"><?php next_comments_link( '<i class="fa fa-arrow-circle-o-right"></i> ' . esc_html__( 'Newer Comments', 'initiator' ) ); ?></div>
+				<div class="comment-previous"><?php previous_comments_link( '<i class="fa fa-arrow-circle-o-left"></i> ' . esc_html__( 'Older Comments', 'white-spektrum' ) ); ?></div>
+				<div class="comment-next"><?php next_comments_link( '<i class="fa fa-arrow-circle-o-right"></i> ' . esc_html__( 'Newer Comments', 'white-spektrum' ) ); ?></div>
 			</nav>
 		<?php } ?>
 		<?php comment_form(); ?>
