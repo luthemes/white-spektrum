@@ -15,23 +15,17 @@
 /// @author Benjamin Lu <benlumia007@gmail.com>
 /// @link   https://github.com/benlumia007/initiator
 ////
+
 .left-sidebar {
-	.content-area {
-		float: right;
-		width: 73.125rem; // 73.125em;
-	}
+    .content-area {
+        float: right;
+        width: 70.54673721340388%;
+    };
 }
 
 .right-sidebar {
-	.content-area {
-		float: left;
-		width: 73.125rem; // 73.125em
-	}
-}
-
-.no-sidebar {
-	.content-area {
-		margin: 0 auto;
-		max-width: 73.125rem; // 73.125em
-	}
+    .content-area {
+        float: left;
+        width: 70.54673721340388%;
+    }
 }

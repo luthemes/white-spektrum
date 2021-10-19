@@ -8,7 +8,6 @@
 //
 .site-header {
 	.site-branding {
-		padding: 2em 0 1em 0;
 		text-align: center;
 
 		.site-title,
@@ -23,5 +22,9 @@
 				text-decoration: none;
 			}
 		}
+	}
+
+	.wp-custom-header {
+		margin: 1.125rem 0;
 	}
 }

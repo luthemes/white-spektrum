@@ -5,6 +5,11 @@ body {
   margin: 0;
 }
 
+img {
+  height: auto;
+  max-width: 100%;
+}
+
 h1 {
   display: block;
   font-family: "Fira Sans", serif;
@@ -60,27 +65,22 @@ h6 {
 }
 
 .site-container {
-  margin: 1.125em auto;
-  max-width: 1170px;
+  margin: 1.125rem auto;
+  max-width: 70.875rem;
+  padding: 1.125rem;
 }
 
 .left-sidebar .content-area {
   float: right;
-  width: 73.125rem;
+  width: 70.5467372134%;
 }
 
 .right-sidebar .content-area {
   float: left;
-  width: 73.125rem;
-}
-
-.no-sidebar .content-area {
-  margin: 0 auto;
-  max-width: 73.125rem;
+  width: 70.5467372134%;
 }
 
 .site-header .site-branding {
-  padding: 2em 0 1em 0;
   text-align: center;
 }
 .site-header .site-branding .site-title,
@@ -91,6 +91,38 @@ h6 {
 .site-header .site-branding .site-title a {
   font-size: 1.5em;
   text-decoration: none;
+}
+.site-header .wp-custom-header {
+  margin: 1.125rem 0;
+}
+
+.content-area {
+  line-height: 1.8rem;
+}
+.content-area .post {
+  margin-bottom: 3rem;
+}
+.content-area .post .entry-header {
+  text-align: center;
+}
+.content-area .post .entry-header .entry-title {
+  margin: 0;
+  padding: 0;
+}
+.content-area .post .entry-header .entry-title a {
+  text-decoration: none;
+}
+.content-area .post .entry-metadata {
+  margin: 0.2rem 0;
+}
+.content-area .post .entry-metadata .fa-user {
+  color: #111111;
+  padding-right: 0.313em;
+}
+.content-area .post .entry-metadata .fa-calendar-alt,
+.content-area .post .entry-metadata .fa-comment {
+  color: #111111;
+  padding: 0 0.313em 0 0.688em;
 }
 
 .widget-area .search-form:before,
@@ -502,8 +534,6 @@ h6 {
 }
 
 .site-content:before, .site-content:after,
-.site-main:before,
-.site-main:after,
 .no-sidebar:before,
 .no-sidebar:after,
 .left-sidebar:before,

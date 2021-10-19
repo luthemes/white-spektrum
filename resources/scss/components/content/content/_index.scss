@@ -7,3 +7,39 @@
 // @author      Benjamin Lu ( https://benjlu.com )
 //
 
+.content-area {
+    line-height: 1.8rem;
+
+    .post {
+        margin-bottom: 3rem;
+
+        .entry-header {
+            text-align: center;
+
+            .entry-title {
+                margin: 0;
+                padding: 0;
+
+                a {
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .entry-metadata {
+            margin: 0.2rem 0;
+
+            .fa-user {
+                color: #111111;
+                padding-right: 0.313em;
+            }
+
+            .fa-calendar-alt,
+            .fa-comment {
+                color: #111111;
+                padding: 0 0.313em 0 0.688em;
+            }
+        }
+    }
+}
+

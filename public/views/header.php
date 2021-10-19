@@ -26,4 +26,5 @@
 			<?php Benlumia007\Backdrop\Theme\Site\display_site_description(); ?>
 		</div>
 		<?php Benlumia007\Backdrop\Theme\Menu\display( 'menu', [ 'primary' ] ); ?>
+		<?php the_custom_header_markup(); ?>
 	</header>
