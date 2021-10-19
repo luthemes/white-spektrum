@@ -1,7 +1,7 @@
 <?php
 /**
- * Main Template File - index.php
- *
+ * The template file used to render a static page ( post type ). 
+ * 
  * @package   White Spektrum
  * @author    Benjamin Lu ( benlumia007@gmail.com )
  * @copyright Copyright (C) 2014-2021. Benjamin Lu
