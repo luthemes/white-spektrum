@@ -27,6 +27,12 @@ $white_spektrum->provider( Benlumia007\Backdrop\Template\Manager\Provider::class
 $white_spektrum->provider( Benlumia007\Backdrop\Template\View\Provider::class );
 
 /**
+ * Register provider for the theme
+ */
+$white_spektrum->provider( WhiteSpektrum\Menu\Provider::class );
+$white_spektrum->provider( WhiteSpektrum\Sidebar\Provider::class );
+
+/**
  * Boot the Framework
  */
 $white_spektrum->boot();
