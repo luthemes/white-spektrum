@@ -1,6 +1,9 @@
 <?php
 /**
- * Main Template File - index.php
+ * The main template file.
+ * 
+ * This is the most generic template file in a WordPress theme and one of 
+ * the two required files for a theme ( the other one being style.css )
  *
  * @package   White Spektrum
  * @author    Benjamin Lu ( benlumia007@gmail.com )
