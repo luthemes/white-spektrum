@@ -40,8 +40,8 @@ class Component extends AdminContract {
 
 	public function tabs( $current = 'introduction' ) {
 		$tabs = [
-            'introduction' => esc_html__( 'Introduction', 'silver-quantum' ),
-            'theme_information' => esc_html__( 'Theme Information', 'silver-quantum' ),
+            'introduction' => esc_html__( 'Introduction', 'white-spektrum' ),
+            'theme_information' => esc_html__( 'Theme Information', 'white-spektrum' ),
         ];
 
 		$admin_nonce = wp_create_nonce( 'admin_nonce' );
@@ -84,19 +84,19 @@ class Component extends AdminContract {
 	}
 
 	public function introduction() { ?>
-		<h2 class="admin-title"><?php esc_html_e( 'Welcome', 'silver-quantum' ); ?></h2>
-		<?php esc_html_e( 'Hope you are enjoying the theme. ', 'silver-quantum' ); ?>
-		<h2 class="admin-title"><?php esc_html_e( 'Recommended Plugins', 'silver-quantum' ); ?></h2>
+		<h2 class="admin-title"><?php esc_html_e( 'Welcome', 'white-spektrum' ); ?></h2>
+		<?php esc_html_e( 'Hope you are enjoying the theme. ', 'white-spektrum' ); ?>
+		<h2 class="admin-title"><?php esc_html_e( 'Recommended Plugins', 'white-spektrum' ); ?></h2>
 		<ul>
-			<li><a href="<?php esc_url( 'https://wordpress.org/plugins/regenerate-thumbnails' ); ?>"><?php esc_html_e( 'Regenerate Thumbnails', 'silver-quantum' ); ?></a></li>
+			<li><a href="<?php esc_url( 'https://wordpress.org/plugins/regenerate-thumbnails' ); ?>"><?php esc_html_e( 'Regenerate Thumbnails', 'white-spektrum' ); ?></a></li>
 		</ul>
 	<?php }
 
     public function theme_information() { ?>
-		<h2 class="admin-title"><?php esc_html_e( 'Theme Info', 'silver-quantum' ); ?></h2>
+		<h2 class="admin-title"><?php esc_html_e( 'Theme Info', 'white-spektrum' ); ?></h2>
 		<ul>
-			<li><?php echo esc_html( __('Name: ', 'silver-quantum' ) . $this->theme_info->name ); ?></li>
-			<li><?php echo esc_html( __('Version: ', 'silver-quantum' ) . $this->theme_info->version ); ?></li>
+			<li><?php echo esc_html( __('Name: ', 'white-spektrum' ) . $this->theme_info->name ); ?></li>
+			<li><?php echo esc_html( __('Version: ', 'white-spektrum' ) . $this->theme_info->version ); ?></li>
 		</ul>
     <?php }
 

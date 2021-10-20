@@ -19,14 +19,14 @@ use Benlumia007\Backdrop\Customize\Component as Customize;
 class Component extends Customize {
     public function panels( $manager ) {
 		$manager->add_panel( 'theme_options', [
-            'title' => esc_html( 'Theme Options', 'silver-quantum' ),
+            'title' => esc_html( 'Theme Options', 'white-spektrum' ),
 			'priority' => 5,
         ] );
     }
 
     public function sections( $manager ) {
         $manager->add_section( 'global_layout', [
-            'title'    => esc_html__( 'Global Layout', 'silver-quantum' ),
+            'title'    => esc_html__( 'Global Layout', 'white-spektrum' ),
 			'panel'    => 'theme_options',
 			'priority' => 5,
         ] );
@@ -44,7 +44,7 @@ class Component extends Customize {
 			new ImageRadio(
 				$manager,
 				'global_layout', [
-					'description' => esc_html__( 'General Layout applies to all layouts that supports in this theme.', 'silver-quantum' ),
+					'description' => esc_html__( 'General Layout applies to all layouts that supports in this theme.', 'white-spektrum' ),
 					'section'     => 'global_layout',
 					'settings'    => 'global_layout',
 					'type'        => 'radio-image',

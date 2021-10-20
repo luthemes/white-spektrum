@@ -45,7 +45,7 @@ class Admin extends AdminPage {
 
 	public function tabs( $current = 'introduction' ) {
 		$tabs = array(
-			'introduction' => esc_html__( 'Introduction', 'backdrop-core' ),
+			'introduction' => esc_html__( 'Introduction', 'white-spektrum' ),
 		);
 
 		$admin_nonce = wp_create_nonce( 'admin_nonce' );
@@ -85,17 +85,17 @@ class Admin extends AdminPage {
 	}
 
 	public function introduction() { ?>
-		<h2 class="admin-title"><?php esc_html_e( 'Theme Info', 'backdrop-core' ); ?></h2>
+		<h2 class="admin-title"><?php esc_html_e( 'Theme Info', 'white-spektrum' ); ?></h2>
 		<ul>
-			<li><?php echo esc_html( __('Theme Name: ', 'backdrop-core' ) . $this->theme_info->name ); ?></li>
-			<li><?php echo esc_html( __('Theme Version: ', 'backdrop-core' ) . $this->theme_info->version ); ?></li>
+			<li><?php echo esc_html( __('Theme Name: ', 'white-spektrum' ) . $this->theme_info->name ); ?></li>
+			<li><?php echo esc_html( __('Theme Version: ', 'white-spektrum' ) . $this->theme_info->version ); ?></li>
 		</ul>
-		<h2 class="admin-title"><?php esc_html_e( 'Welcome', 'backdrop-core' ); ?></h2>
-		<?php esc_html_e( 'Hope you are enjoying the theme. ', 'backdrop-core' ); ?>
-		<h2 class="admin-title"><?php esc_html_e( 'Recommended Plugins', 'backdrop-core' ); ?></h2>
+		<h2 class="admin-title"><?php esc_html_e( 'Welcome', 'white-spektrum' ); ?></h2>
+		<?php esc_html_e( 'Hope you are enjoying the theme. ', 'white-spektrum' ); ?>
+		<h2 class="admin-title"><?php esc_html_e( 'Recommended Plugins', 'white-spektrum' ); ?></h2>
 		<ul>
-			<li><a href="<?php esc_url( 'https://wordpress.org/plugins/jetpack' ); ?>"><?php esc_html_e( 'Jetpack by WordPress.com', 'backdrop-core' ); ?></a></li>
-			<li><a href="<?php esc_url( 'https://wordpress.org/plugins/regenerate-thumbnails' ); ?>"><?php esc_html_e( 'Regenerate Thumbnails', 'backdrop-core' ); ?></a></li>
+			<li><a href="<?php esc_url( 'https://wordpress.org/plugins/jetpack' ); ?>"><?php esc_html_e( 'Jetpack by WordPress.com', 'white-spektrum' ); ?></a></li>
+			<li><a href="<?php esc_url( 'https://wordpress.org/plugins/regenerate-thumbnails' ); ?>"><?php esc_html_e( 'Regenerate Thumbnails', 'white-spektrum' ); ?></a></li>
 		</ul>
 	<?php }
 
