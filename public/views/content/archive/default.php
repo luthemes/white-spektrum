@@ -19,20 +19,6 @@
 	</div>
 	</header>
 	<div class="entry-content">
-		<?php the_content(); ?>
-		<?php
-			wp_link_pages( [
-				'before'      => '<div class="page-links">' . esc_html__( 'Pages:', 'white-spektrum' ),
-				'after'       => '</div>',
-				'link_before' => '<span>',
-				'link_after'  => '</span>',
-				'pagelink'    => '<span class="screen-reader-text">' . esc_html__( 'Page', 'white-spektrum' ) . ' </span>%',
-				'separator'   => '<span class="screen-reader-text">,</span> ',
-			] );
-			?>
-	</div>
-	<div class="entry-taxonomies">
-		<?php Benlumia007\Backdrop\Theme\Entry\display_categories(); ?>
-		<?php Benlumia007\Backdrop\Theme\Entry\display_tags(); ?>
+		<?php the_excerpt(); ?>
 	</div>
 </article>

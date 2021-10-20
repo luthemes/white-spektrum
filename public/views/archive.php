@@ -17,7 +17,7 @@
 				<?php if ( ! is_front_page() ) { ?>
 					<header class="archive-header">
 						<?php the_archive_title( '<h1 class="archive-title">', '</h1>'); ?>
-						<?php the_archive_description( 'p class="archive-description">', '</p>'); ?>
+						<?php the_archive_description( '<p class="archive-description">', '</p>'); ?>
 					</header>
 				<?php } ?>
 

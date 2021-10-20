@@ -10,6 +10,16 @@
 .content-area {
     line-height: 1.8rem;
 
+    .archive-header {
+        padding: 1.125rem;
+        text-align: center;
+
+        .archive-title {
+            margin: 0;
+            padding: 0;
+        }
+    }
+
     .post {
         margin-bottom: 3rem;
 
@@ -48,5 +58,59 @@
             }
         }
     }
+
+    .page {
+        .entry-header {
+            text-align: center;
+
+            .entry-title {
+                margin: 0;
+                padding: 0;
+
+                a {
+                    border-bottom: none;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
 }
 
+@media screen and ( min-width: 1025px ) {
+    .no-sidebar {
+        .content-area {
+            .loop {
+                .grid {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-gap: 1.125rem;
+                    margin: 0;
+                    padding: 0;
+    
+                    .post {
+                        .post-thumbnail {
+                            .size-silver-quantum-medium-thumbnails {
+                                box-shadow: 3px 3px #cccccc;
+                            }
+                        }
+                        .entry-header {
+                            .entry-title {
+                                font-size: 1.8rem;
+                                margin: 0;
+                                padding: 0;
+                            }
+                            .entry-metadata {
+                                font-size: 0.813rem;
+                                margin-top: -0.5rem;
+                            }
+                        }
+    
+                        .entry-content {
+                            margin-top: 1.125rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

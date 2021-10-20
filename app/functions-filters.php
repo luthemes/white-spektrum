@@ -44,7 +44,7 @@ add_filter( 'excerpt_length', function() {
  */
 add_filter( 'get_the_archive_title', function() {
 	if ( is_category() ) {
-		$title = esc_html__( 'Category', 'white-spektrum' ) . '<span class="archive-description">' . single_cat_title( '', false ) . '</span>';
+		$title = single_cat_title( '', false );
 	} elseif ( is_tag() ) {
 		$title = esc_html__( 'Tag', 'white-spektrum' ) . '<span class="archive-description">' . single_tag_title( '', false ) . '</span>';
 	} elseif ( is_author() ) {
