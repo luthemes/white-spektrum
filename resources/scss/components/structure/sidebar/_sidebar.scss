@@ -7,16 +7,20 @@
 // @author      Benjamin Lu ( https://benjlu.com )
 //
 
-.left-sidebar {
-    .widget-area {
-        float: left;
-        width: 27.86596119929453%;
-    }
-}
-
-.left-sidebar {
-    .widget-area {
-        float: right;
-        width: 27.86596119929453%;
+@media screen and ( min-width: 1025px ) {
+    .site-content {
+        .left-sidebar {
+            .widget-area {
+                float: left;
+                width: 27.86596119929453%;
+            }
+        }
+        
+        .right-sidebar {
+            .widget-area {
+                float: right;
+                width: 27.86596119929453%;
+            }
+        }
     }
 }
