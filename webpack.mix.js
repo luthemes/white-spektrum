@@ -54,7 +54,8 @@ mix.options( {
 	processCssUrls : false,
 	terser: {
 		extractComments: false,
-	  }
+	  },
+	  manifest: false
 } );
 
 /*
