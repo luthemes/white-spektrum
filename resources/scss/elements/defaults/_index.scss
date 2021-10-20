@@ -1,0 +1,19 @@
+//
+// Luthemes ( elements/_index.scss )
+//
+// @package   Luthemes
+// @copyright Copyright (C) 2019-2021. Benjamin Lu
+// @license   GNU General Public License v2 or later ( https://www.gnu.org/licenses/gpl-2.0.html )
+// @author    Benjamin Lu ( https://getbenonit.com )
+//
+
+body {
+    font-family: font-family( 'primary' );
+    font-size: $text-base;
+    margin: 0;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}

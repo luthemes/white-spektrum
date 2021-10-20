@@ -1,6 +1,3 @@
-/assets/mix-minifest.json
-/assets/js/app.js.LICENSE.txt
-/assets/js/app.js.map
-
-/node_modules
-/vendor
+node_modules
+public/assets
+vendor
