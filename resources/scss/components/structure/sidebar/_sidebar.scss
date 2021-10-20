@@ -6,3 +6,17 @@
 // @license     GNU General Public License v2 or later ( https://www.gnu.org/licenses/gpl-2.0.html )
 // @author      Benjamin Lu ( https://benjlu.com )
 //
+
+.left-sidebar {
+    .widget-area {
+        float: left;
+        width: 27.86596119929453%;
+    }
+}
+
+.left-sidebar {
+    .widget-area {
+        float: right;
+        width: 27.86596119929453%;
+    }
+}

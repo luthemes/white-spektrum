@@ -21,6 +21,7 @@
                 padding: 0;
 
                 a {
+                    border-bottom: none;
                     text-decoration: none;
                 }
             }
@@ -38,6 +39,12 @@
             .fa-comment {
                 color: #111111;
                 padding: 0 0.313em 0 0.688em;
+            }
+        }
+
+        .entry-excerpt {
+            .read-more {
+                border-bottom: none;
             }
         }
     }

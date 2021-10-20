@@ -24,8 +24,8 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <div id="container" class="site-container">
-	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'white-spektrum' ) ?></a>
-	<header id="header" class="site-header">
+	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'initiator' ) ?></a>
+	<header id="masthead" class="site-header">
 		<div class="site-branding">
 			<?php Benlumia007\Backdrop\Theme\Site\display_site_title(); ?>
 			<?php Benlumia007\Backdrop\Theme\Site\display_site_description(); ?>

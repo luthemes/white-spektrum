@@ -6,7 +6,7 @@
  * @author    Benjamin Lu ( benlumia007@gmail.com )
  * @copyright Copyright (C) 2014-2021. Benjamin Lu
  * @license   https://www.gnu.org/licenses/gpl-2.0.html
- * @link      https://luthemes.com/portfolio/silver-quantum
+ * @link      https://luthemes.com/portfolio/white-spektrum
  */
 
 /**
@@ -49,13 +49,13 @@ add_action( 'after_setup_theme', function() {
 		 * By adding add_theme_support( 'html5', arrayy() );, this feature when enabled allows the user use of HTML5 markup for
 		 * comment list, comment forms, search forms, galleries, and captions.
 		 */
-		add_theme_support( 'html5', array(
+		add_theme_support( 'html5', [
 			'comment-list',
 			'comment-form',
 			'search-form',
 			'gallery',
 			'caption',
-		) );
+		] );
 
 		/**
 		 * By adding add_theme_support( 'post-thumbnails' );, this feature when enabled allows you to setup featured images
@@ -81,7 +81,7 @@ add_action( 'after_setup_theme', function() {
 		/**
 		 * Load theme translation.
 		 */
-		load_theme_textdomain( 'initiator', get_parent_theme_file_path( '/languages ' ) );
+		load_theme_textdomain( 'white-spektrum', get_parent_theme_file_path( '/languages ' ) );
 	}
 );
 
@@ -107,7 +107,7 @@ add_action( 'after_setup_theme', function() {
 				'header-image' => array(
 					'url'           => '%s/public/images/header-image.jpg',
 					'thumbnail_url' => '%s/public/images/header-image.jpg',
-					'description'   => esc_html__( 'Header Image', 'initiator' ),
+					'description'   => esc_html__( 'Header Image', 'white-spektrum' ),
 				),
 			)
 		);
@@ -116,21 +116,21 @@ add_action( 'after_setup_theme', function() {
 add_action( 'backdrop/templates/register', function( $templates ) {
 	$templates->add(
 		'template-custom-sidebar.php', [
-			'label' => esc_html__( 'Custom Sidebar', 'silver-quantum' ),
+			'label' => esc_html__( 'Custom Sidebar', 'white-spektrum' ),
 			'post_types' => [ 'page' ]
 		]
 	);
 
 	$templates->add(
 		'template-left-sidebar.php', [
-			'label' => esc_html__( 'Left Sidebar', 'silver-quantum' ),
+			'label' => esc_html__( 'Left Sidebar', 'white-spektrum' ),
 			'post_types' => [ 'page' ]
 		]
 	);
 
 	$templates->add(
 		'template-right-sidebar.php', [
-			'label' => esc_html__( 'Right Sidebar', 'silver-quantum' ),
+			'label' => esc_html__( 'Right Sidebar', 'white-spektrum' ),
 			'post_types' => [ 'page' ]
 		]
 	);
