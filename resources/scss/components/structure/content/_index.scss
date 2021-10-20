@@ -16,16 +16,26 @@
 /// @link   https://github.com/benlumia007/initiator
 ////
 
-.left-sidebar {
-    .content-area {
-        float: right;
-        width: 70.54673721340388%;
-    };
+.site-content {
+    margin: 1.125rem;
 }
 
-.right-sidebar {
-    .content-area {
-        float: left;
-        width: 70.54673721340388%;
+@media screen and ( min-width: 1025px ) {
+    .site-content {
+        margin: 0;
+        
+        .left-sidebar {
+            .content-area {
+                float: right;
+                width: 70.54673721340388%;
+            };
+        }
+        
+        .right-sidebar {
+            .content-area {
+                float: left;
+                width: 70.54673721340388%;
+            }
+        }
     }
 }
