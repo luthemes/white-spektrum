@@ -18,7 +18,7 @@ const rimraf  = require( 'rimraf' );
 const fs      = require( 'fs' );
 
 // Folder name to export the files to.
-let exportPath = 'initiator';
+let exportPath = 'white-spektrum';
 
 // Theme root-level files to include.
 let files = [
@@ -33,8 +33,8 @@ let files = [
 // Folders to include.
 let folders = [
 	'app',
-	'assets',
 	'languages',
+	'public',
 	'vendor'
 ];
 
