@@ -27,6 +27,7 @@ add_action( 'after_switch_theme', function() {
 				<p>
 					<?php if ( version_compare( $GLOBALS['wp_version'], '4.9', '<' ) ) {
 						printf( 
+							// translators: 1 =  a version string, 2 = current wp version string.
 							esc_html__( 'White Spektrum requires at least WordPress version %1$s. You are currently running %2$s. Please upgrade and try again.', 'white-spektrum' ),
 							'4.9',
 							$GLOBALS['wp_version'],
@@ -34,6 +35,7 @@ add_action( 'after_switch_theme', function() {
 						);
 					} elseif ( version_compare( PHP_VERSION, '5.6', '<' ) ) {
 						printf(
+							// translators: 1 =  a version string, 2 = current wp version string.
 							esc_html__( 'White Spektrum requires at least PHP version %1$s. You are currently running %2$s. Please upgrade and try again.', 'white-spektrum' ),
 							'5.6',
 							PHP_VERSION,
