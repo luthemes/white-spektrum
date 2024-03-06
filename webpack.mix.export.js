@@ -5,11 +5,11 @@
  * uploading to a site or zipping. Edit the `files` or `folders` variables if
  * you need to change something.
  *
- * @package   Mythic
- * @author    Justin Tadlock <justintadlock@gmail.com>
- * @copyright 2018 Justin Tadlock
- * @link      https://themehybrid.com/themes/mythic
- * @license   https://www.gnu.org/licenses/gpl-2.0.html GPL-2.0-or-later
+ * @package   White Spektrum
+ * @author    Benjamin Lu <benlumia007@gmail.com>
+ * @copyright 2014 Benjamin Lu
+ * @license   https://www.gnu.org/licenses/gpl-2.0.html
+ * @link      https://luthemes.com/portfolio/white-spektrum
  */
 
 // Import required packages.
@@ -33,7 +33,7 @@ let files = [
 // Folders to include.
 let folders = [
 	'app',
-	'languages',
+	'config',
 	'public',
 	'vendor'
 ];
