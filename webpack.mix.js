@@ -7,55 +7,47 @@
  *
  * @link https://laravel.com/docs/5.6/mix
  *
- * @package   Initiator
+ * @package   White Spektrum
  * @author    Benjamin Lu <benlumia007@gmail.com>
- * @copyright 2020 Benjamin Lu
- * @link      https://github.com/benlumia007/initiator
- * @license   https://www.gnu.org/licenses/gpl-2.0.html GPL-2.0-or-later
+ * @copyright 2014 Benjamin Lu
+ * @license   https://www.gnu.org/licenses/gpl-2.0.html
+ * @link      https://luthemes.com/portfolio/white-spektrum
  */
 
- // Import All Required Packages
  const mix = require( 'laravel-mix' );
 
- /*
+/*
  * -----------------------------------------------------------------------------
- * Theme Export Process
+ * Build Process
  * -----------------------------------------------------------------------------
- * Configure the export process in `webpack.mix.export.js`. This bit of code
- * should remain at the top of the file here so that it bails early when the
- * `export` command is run.
+ * The section below handles processing, compiling, transpiling, and combining
+ * all of the theme's assets into their final location. This is the meat of the
+ * build process.
  * -----------------------------------------------------------------------------
  */
 
-if ( process.env.export ) {
-	const exportTheme = require( './webpack.mix.export.js' );
-	return;
-}
-
- /*
+/*
  * Sets the development path to assets. By default, this is the `/resources`
  * folder in the theme.
  */
 const devPath  = 'resources';
 
 /*
- * Sets the path to the generated assets. By default, this is the `/public` folder in the theme.
+ * Sets the path to the generated assets. By default, this is the `public` folder
+ * in the theme. If doing something custom, make sure to change this everywhere.
  */
 mix.setPublicPath( 'public' );
 
 /*
  * Set Laravel Mix options.
  *
- * @link https://laravel.com/docs/5.6/mix#postcss
  * @link https://laravel.com/docs/5.6/mix#url-processing
  */
 mix.options( {
-	postCss        : [ require( 'postcss-preset-env' )() ],
 	processCssUrls : false,
 	terser: {
 		extractComments: false,
-	  },
-	  manifest: false
+	  }
 } );
 
 /*
