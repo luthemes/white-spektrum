@@ -14,6 +14,8 @@
  */
 namespace WhiteSpektrum;
 
+use function Backdrop\Theme\is_classicpress;
+
 /**
  * Setup Theme Support.
  *
@@ -49,13 +51,15 @@ add_action( 'after_setup_theme', function() {
 		 * By adding add_theme_support( 'html5', arrayy() );, this feature when enabled allows the user use of HTML5 markup for
 		 * comment list, comment forms, search forms, galleries, and captions.
 		 */
-		add_theme_support( 'html5', [
-			'comment-list',
-			'comment-form',
-			'search-form',
-			'gallery',
-			'caption',
-		] );
+		if ( ! is_classicpress() ) {
+			add_theme_support( 'html5', [
+				'comment-list',
+				'comment-form',
+				'search-form',
+				'gallery',
+				'caption',
+			] );
+		}
 
 		/**
 		 * By adding add_theme_support( 'post-thumbnails' );, this feature when enabled allows you to setup featured images
@@ -81,9 +85,66 @@ add_action( 'after_setup_theme', function() {
 		/**
 		 * Load theme translation.
 		 */
-		load_theme_textdomain( 'white-spektrum', get_parent_theme_file_path( '/languages ' ) );
+		load_theme_textdomain( 'white-spektrum', get_parent_theme_file_path( 'public/language' ) );
 	}
 );
+
+
+/**
+ * Register menus.
+ *
+ * @link   https://developer.wordpress.org/reference/functions/register_nav_menus/
+ *
+ * @since  1.0.0
+ * @access public
+ * @return void
+ */
+add_action( 'init', function() {
+
+	register_nav_menus( [
+		'primary'	=> esc_html__( 'Primary Navigation', 'silver-quantum' ),
+		'social' => esc_html__( 'Social Navigation', 'silver-quantum' )
+	] );
+
+}, 5 );
+
+/**
+ * Register sidebars.
+ *
+ * @link   https://developer.wordpress.org/reference/functions/register_sidebar/
+ * @link   https://developer.wordpress.org/reference/functions/register_sidebars/
+ * @since  1.0.0
+ * @access public
+ * @return void
+ */
+add_action( 'widgets_init', function() {
+
+	$args = [
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>'
+	];
+
+	$sidebars = [
+		[
+			'id' => 'primary',
+			'name' => esc_html__( 'Primary', 'silver-quantum' )
+		],
+		[
+			'id' => 'secondary',
+			'name' => esc_html__( 'Secondary', 'silver-quantum' )
+		],
+		[
+			'id' => 'custom',
+			'name' => esc_html__( 'Custom', 'silver-quantum' )
+		],
+	];
+
+	foreach ( $sidebars as $sidebar ) {
+		register_sidebar( array_merge( $sidebar, $args ) );
+	}
+}, 5 );
 
 /**
  * Add support for custom header.

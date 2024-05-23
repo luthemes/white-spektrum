@@ -1,0 +1,8 @@
+.site-content {
+    &:before,
+    &:after {
+        clear: both;
+        content: "";
+        display: table;
+    }
+}

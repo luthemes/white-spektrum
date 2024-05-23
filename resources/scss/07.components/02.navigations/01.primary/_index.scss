@@ -1,0 +1,131 @@
+@media  screen and ( min-width: 73.188rem ) {
+	.top-navigation {
+		padding: 1.125rem;
+
+
+		.primary-menu {
+
+			.menu-toggle {
+				display: none;
+			}
+
+			.menu-items {
+				display: flex;
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				position: static;
+				justify-content: center;
+
+				.menu-item {
+					left: unset;
+					position: relative;
+					width: max-content;
+
+					&:hover {
+						color: color( black );
+						text-decoration: underline;
+						text-decoration-thickness: 2px;
+						text-underline-offset: 4px;
+					}
+
+					&.menu-item-has-children {
+						> {
+							a {
+								&:after {
+									content: '';
+									display: inline-block;
+									border: 0.063rem solid black;
+									border-width: 0 0.25rem 0.25rem 0;
+									transform: rotate( 45deg );
+									padding: 0.20rem;
+									margin-left: 0.5rem;
+									margin-right: 0.5rem;
+                                    margin-bottom: 0.063rem;
+								}
+							}
+						}
+
+						.sub-menu {
+							.menu-item-has-children {
+								a {
+									&:after {
+										display: none;
+									}
+								}
+							}
+						}
+					}
+
+					&.current-menu-item {
+						a {
+							color: color( black );
+							padding: 0.5rem 1rem;
+						}
+
+						.sub-menu {
+							.menu-item {
+								a {
+									color: color( black );
+									padding: 0.5rem 1rem;
+									text-decoration: none;
+									text-decoration-thickness: 0;
+									text-underline-offset: 0;
+								}
+							}
+						}
+					}
+
+					a {
+						color: color( black );
+						padding: 0.5rem 1rem;
+						text-decoration: none;
+					}
+
+					.dropdown-toggle {
+						display: none;
+					}
+
+					.sub-menu {
+						background: color( black );
+						left: 0;
+						list-style-type: none;
+						margin: 0.7rem 0;
+						opacity: 0;
+						padding: 0.5rem 0;
+						position: absolute;
+						transform: translateY( -1em );
+						visibility: hidden;
+						transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+
+						.menu-item {
+							margin: 0 0 0.5rem 0;
+							padding: 0.5rem;
+
+							a {
+								color: color( white );
+							}
+
+							&:last-child {
+								margin: 0;
+							}
+						}
+					}
+
+					&:hover,
+					&:focus-within,
+					&.focus {
+						.sub-menu {
+							left: 0;
+							visibility: visible; /* shows sub-menu */
+							opacity: 1;
+							z-index: 1;
+							transform: translateY(0%);
+							transition-delay: 0s, 0s, 0.3s
+						}
+					}
+				}
+			}
+		}
+	}
+}

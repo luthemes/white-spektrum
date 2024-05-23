@@ -1,41 +1,45 @@
 {
-    "name": "benlumia007/white-spektrum",
-    "description": "White Spektrum is a starter theme designed to help theme authors using Backdrop Core Framework.",
-    "keywords": [
-        "wordpress",
-        "wordpress-theme"
-    ],
-    "homepage": "https://github.com/benlumia007/white-spektrum",
+    "name": "luthemes/white-spektrum",
+    "description": "White Spektrum has been converted into a responsive theme that looks great on smartphones and tablets. This theme offers several features such as custom header, left and right sidebars, featured images and more. The Mobile Menu is slightly different from other themes. The mobile menu has been created at the bottom left corner that helps users to navigation easier.",
+    "keywords": [ "wordpress", "theme" ],
+    "homepage": "https://luthemes.com/portfolio/white-spektrum",
     "license": "GPL-2.0-or-later",
     "authors": [
         {
             "name": "Benjamin Lu",
             "email": "benlumia007@gmail.com",
-            "homepage": "https://benjlu.com"
+            "homepage": "https://luthemes.com"
         }
     ],
     "autoload": {
         "psr-4": {
             "WhiteSpektrum\\": "app/"
-		},
-		"files":[
-			"app/framework.php",
-			"app/functions-filters.php",
-			"app/functions-scripts.php",
-			"app/functions-setup.php"
-		]
+		}
     },
     "require": {
-        "php": ">=7.3.24",
-        "benlumia007/backdrop": "v3.0.0.x-dev",
-        "benlumia007/backdrop-customize": "v1.0.0.x-dev",
-        "benlumia007/backdrop-customize-helpers": "v1.0.0.x-dev",
-        "benlumia007/backdrop-fontawesome": "v1.0.0.x-dev",
-        "benlumia007/backdrop-googlefonts": "v1.0.0.x-dev",
-        "benlumia007/backdrop-template-helpers": "v1.0.0.x-dev",
-        "benlumia007/backdrop-template-hierarchy": "v1.0.0.x-dev",
-        "benlumia007/backdrop-template-manager": "v1.0.0.x-dev",
-        "benlumia007/backdrop-template-view": "v1.0.0.x-dev",
-        "benlumia007/backdrop-theme": "v1.0.0.x-dev"
-    }
+		"php": ">=7.1",
+		"backdrop-dev/framework": "^1.0",
+		"backdrop-dev/customize": "^1.0",
+		"backdrop-dev/fonts": "^1.0",
+		"backdrop-dev/languages": "dev-develop",
+		"backdrop-dev/mix": "^1.0",
+		"backdrop-dev/template-hierarchy": "^1.0",
+		"backdrop-dev/template-manager": "^1.0",
+		"backdrop-dev/view": "^1.0",
+		"backdrop-dev/theme": "^1.0"
+	},
+	"require-dev": {
+		"dealerdirect/phpcodesniffer-composer-installer": "*",
+		"wptrt/wpthemereview": "*",
+		"php-parallel-lint/php-parallel-lint": "*"
+	},
+	"scripts": {
+		"lint:wpcs": "@php ./vendor/squizlabs/php_codesniffer/bin/phpcs . -n",
+		"lint:php": "@php ./vendor/bin/parallel-lint --exclude .git --exclude vendor ."
+	},
+	"config": {
+		"allow-plugins": {
+			"dealerdirect/phpcodesniffer-composer-installer": true
+		}
+	}
 }

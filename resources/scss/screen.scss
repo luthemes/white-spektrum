@@ -15,7 +15,24 @@
 //
 // Settings handle the configuration and variables.
 
-@import 'settings/index';
+@import '01.settings/index';
+
+// -----------------------------------------------------------------------------
+// Import tools.
+// -----------------------------------------------------------------------------
+//
+// These are used throughout the code but don't output CSS on their own. Things
+// like functions, mixins, and extensions go here.
+@import '02.tools/index';
+
+// -----------------------------------------------------------------------------
+// Import generic styles.
+// -----------------------------------------------------------------------------
+//
+// This is the first point that real CSS is output. Resets, normalization,
+// fonts, etc. are best handled here. These are the base styles that other
+// styles will build upon.
+@import '03.generics/index';
 
 // -----------------------------------------------------------------------------
 // Import element styles.
@@ -25,7 +42,16 @@
 // The styles in this folder should only handle the defaults. More specific
 // styles should be handled later in the cascade.
 
-@import 'elements/index';
+@import '04.elements/index';
+
+// -----------------------------------------------------------------------------
+// Import object styles.
+// -----------------------------------------------------------------------------
+//
+// Undecorated design patterns.
+@import '05.objects/index';
+
+@import '06.layouts/index';
 
 // -----------------------------------------------------------------------------
 // Import component styles.
@@ -35,7 +61,7 @@
 // fonts, etc. are best handled here. These are the base styles that other
 // styles will build upon.
 
-@import 'components/index';
+@import '07.components/index';
 
 // -----------------------------------------------------------------------------
 // Import component styles.
@@ -45,4 +71,4 @@
 // fonts, etc. are best handled here. These are the base styles that other
 // styles will build upon.
 
-@import 'utilities/index';
+@import '08.utilities/index';

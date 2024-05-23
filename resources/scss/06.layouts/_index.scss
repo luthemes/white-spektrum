@@ -1,0 +1,40 @@
+.site-container {
+    margin: 0 auto;
+    max-width: 72.75rem;
+    padding: 1.125rem;
+
+    .site-content {
+
+        .left-sidebar {
+            display: grid;
+            grid-template-columns: 30% 70%;
+            grid-gap: 1.125rem;
+
+            .content-area {
+                order: 2;
+                padding: 1.125rem;
+            }
+
+            .widget-area {
+                order: 1;
+                padding: 1.125rem;
+            }
+        }
+
+        .right-sidebar {
+            display: grid;
+            grid-template-columns: 70% 30%;
+            grid-gap: 1.125rem;
+
+            .content-area {
+                order: 1;
+                padding: 1.125rem
+            }
+
+            .widget-area {
+                order: 2;
+                padding: 1.125rem;
+            }
+        }
+    }
+}

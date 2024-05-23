@@ -1,0 +1,25 @@
+.content-area {
+    line-height: 1.8rem;
+
+    .page,
+    .post {
+        margin-top: 3rem;
+
+        &:first-child {
+            margin-top: 0;
+        }
+        
+        .entry-header {
+            text-align: center;
+
+            .entry-title {
+                margin: 0;
+                padding: 0;
+
+                a {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

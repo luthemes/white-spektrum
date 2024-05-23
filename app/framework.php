@@ -1,40 +1,70 @@
 <?php
 /**
- * Initiator ( framework.php )
+ * Theme framework file.
  *
- * This file is used to create a new framework instance and adds specific features to the theme.
+ * This file is used to create a new application instance and bind items to the
+ * container. This is the heart of the application.
  *
- * @package     Initiator
- * @copyright   Copyright (C) 2019. Benjamin Lu
- * @license     GNU General Public License v2 or later ( https://www.gnu.org/licenses/gpl-2.0.html )
- * @author      Benjamin Lu ( https://benjlu.com )
+ * @package   Silver Quantum
+ * @author    Benjamin Lu <benlumia007@gmail.com>
+ * @copyright 2014 Benjamin Lu
+ * @license   https://www.gnu.org/licenses/gpl-2.0.html
+ * @link      https://luthemes.com/portfolio/silver-quantum
  */
 
-/**
- * Create a new framework instance
- *
- * This will create an instance of the framework allowing you to initialize the theme.
- */
-$white_spektrum = new Benlumia007\Backdrop\Framework();
+# ------------------------------------------------------------------------------
+# Create a new application.
+# ------------------------------------------------------------------------------
+#
+# Creates the one true instance of the Backdrop application. You may access this 
+# instance via the `Backdrop\app()` function or `Backdrop\App` static class after 
+# the application has booted.
 
-/**
- * Register default providers
- */
-$white_spektrum->provider( Benlumia007\Backdrop\FontAwesome\Provider::class );
-$white_spektrum->provider( Benlumia007\Backdrop\GoogleFonts\Provider::class );
-$white_spektrum->provider( Benlumia007\Backdrop\Template\Hierarchy\Provider::class );
-$white_spektrum->provider( Benlumia007\Backdrop\Template\Manager\Provider::class );
-$white_spektrum->provider( Benlumia007\Backdrop\Template\View\Provider::class );
+$theme = Backdrop\booted() ? Backdrop\app() : new Backdrop\Core\Application();
 
-/**
- * Register provider for the theme
- */
-$white_spektrum->provider( WhiteSpektrum\Admin\Provider::class );
-$white_spektrum->provider( WhiteSpektrum\Customize\Layouts\Provider::class );
-$white_spektrum->provider( WhiteSpektrum\Menu\Provider::class );
-$white_spektrum->provider( WhiteSpektrum\Sidebar\Provider::class );
+# ------------------------------------------------------------------------------
+# Register default service providers with the application.
+# ------------------------------------------------------------------------------
+#
+# Before booting the application, add any service providers that are necessary
+# for running the theme. Service providers are essentially the backbone of the
+# bootstrapping process.
 
-/**
- * Boot the Framework
- */
-$white_spektrum->boot();
+$theme->provider( Backdrop\Customize\Provider::class );
+$theme->provider( Backdrop\Fonts\Provider::class );
+$theme->provider( Backdrop\Languages\Provider::class );
+$theme->provider( Backdrop\Mix\Provider::class );
+$theme->provider( Backdrop\Template\Hierarchy\Provider::class );
+$theme->provider( Backdrop\Template\Manager\Provider::class );
+$theme->provider( Backdrop\Theme\Provider::class );
+$theme->provider( Backdrop\View\Provider::class );
+
+# ------------------------------------------------------------------------------
+# Register additional service providers with the application.
+# ------------------------------------------------------------------------------
+#
+# Before booting the application, add any additional service providers that are 
+# necessary for running the theme.
+
+// $theme->provider( SilverQuantum\Provider::class );
+// $theme->provider( SilverQuantum\Customize\Provider::class );
+// $theme->provider( SilverQuantum\Customize\Layouts\Provider::class );
+
+# ------------------------------------------------------------------------------
+# Perform bootstrap actions.
+# ------------------------------------------------------------------------------
+#
+# Creates an action hook for child themes (or even plugins) to hook into the
+# bootstrapping process and add their own bindings before the app is booted by
+# passing the application instance to the action callback.
+
+do_action( 'white/spektrum/bootstrap', $theme );
+
+# ------------------------------------------------------------------------------
+# Bootstrap the application.
+# ------------------------------------------------------------------------------
+#
+# Calls the application `boot()` method, which launches the application. Pat
+# yourself on the back for a job well done.
+
+$theme->boot();

@@ -8,7 +8,7 @@
  *
  * @package   White Spektrum
  * @author    Benjamin Lu <benlumia007@gmail.com>
- * @copyright 2014-2023. Benjamin Lu
+ * @copyright 2014 Benjamin Lu
  * @license   https://www.gnu.org/licenses/gpl-2.0.html
  * @link      https://luthemes.com/portfolio/white-spektrum
  */
@@ -20,8 +20,8 @@
  * require are available through autoload.
  */
 
-if ( file_exists( get_parent_theme_file_path( '/vendor/autoload.php' ) ) ) {
-	require_once get_parent_theme_file_path( '/vendor/autoload.php' );
+if ( file_exists( get_parent_theme_file_path( 'vendor/autoload.php' ) ) ) {
+	require_once get_parent_theme_file_path( 'vendor/autoload.php' );
 }
 
 # ------------------------------------------------------------------------------
@@ -34,8 +34,8 @@ if ( file_exists( get_parent_theme_file_path( '/vendor/autoload.php' ) ) ) {
 array_map( function( $file ) {
 	require_once( get_parent_theme_file_path( "app/{$file}.php" ) );
 }, [
-	'Site/functions-site',
+	'functions-assets',
 	'functions-extras',
-	'functions-scripts',
 	'functions-setup',
+	'functions-template'
 ] );
