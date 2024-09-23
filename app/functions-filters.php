@@ -13,6 +13,8 @@ namespace WhiteSpektrum;
 
 use function Backdrop\Fonts\enqueue;
 use WhiteSpektrum\Template\ErrorPage;
+use WhiteSpektrum\Tools\Config;
+use WhiteSpektrum\Tools\Svg;
 
 add_filter( 'body_class', function( $classes ) {
 
@@ -61,8 +63,24 @@ add_filter( 'excerpt_more', function() {
 		esc_url( get_permalink() ),
 		sprintf(
 			// Translators: %s is the post title for screen readers.
-			esc_html__( 'Continue reading&nbsp;%s&nbsp;&rarr;', 'prismatic' ),
+			esc_html__( 'Continue reading&nbsp;%s&nbsp;&rarr;', 'white-spektrum' ),
 			the_title( '<span class="screen-reader-text">', '</span>', false )
 		)
 	);
 } );
+
+add_filter( 'walker_nav_menu_start_el', function( $item_output, $item, $depth, $args ) {
+
+	if ( 'social' === $args->theme_location ) {
+
+		foreach ( Config::get( 'social-icons' ) as $url => $icon ) {
+			if ( false !== strpos( $item->url, $url ) ) {
+				$item_output = str_replace(
+					$args->link_before,
+					Svg::display( $icon ) . $args->link_before,
+					$item_output
+				);
+			}
+		}
+	}
+}, 10, 4 );
