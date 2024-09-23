@@ -1,4 +1,9 @@
 # Change Log
 
+## 2.1.1 - 09.23.2024
+
+### Bug
+* make sure that we remove $args from wp_link_page()
+
 ## 2.1 - 09.23.2024
 * Theme Relaunch. Everything New!

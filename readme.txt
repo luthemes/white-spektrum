@@ -67,7 +67,10 @@ Upgrade Notice
 Not Available At the Moment
 
 == Changelog ==
-= 2.0.4 - 09.23.2024 =
+= 2.1.1 - 09.23.2024 =
+* make sure that we remove $args from wp_link_page()
+
+= 2.1 - 09.23.2024 =
 * Theme relaunch. Everything's new! 
 
 
