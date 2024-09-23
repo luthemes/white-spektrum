@@ -1,25 +1,38 @@
-.content-area {
-    line-height: 1.8rem;
-
-    .page,
-    .post {
-        margin-top: 3rem;
-
-        &:first-child {
-            margin-top: 0;
-        }
-        
-        .entry-header {
-            text-align: center;
-
-            .entry-title {
-                margin: 0;
-                padding: 0;
-
-                a {
-                    text-decoration: none;
+@media screen and ( min-width: 1081px ) {
+    .content-area {
+        line-height: 1.8rem;
+    
+        article {
+            margin-top: 3rem;
+    
+            &:first-child {
+                margin-top: 0;
+            }
+    
+            .entry-header {
+                text-align: center;
+    
+                .entry-title {
+                    margin: 0;
+                    padding: 0;
+    
+                    a {
+                        text-decoration: none;
+                    }
                 }
+    
+                .entry-metadata {
+                    font-size: 0.875rem;
+                }
+            }
+
+            .entry-excerpt,
+            .entry-content {
+                margin: 0 auto;
+                max-width: 640px;
             }
         }
     }
 }
+
+@import '05.comments';
