@@ -45,3 +45,54 @@ add_action( 'wp_enqueue_scripts', function() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 } );
+
+add_action( 'wp_enqueue_scripts', function() {
+	$global_layout = get_theme_mod( 'theme_global_layout', 'full' );
+
+	$images = get_theme_mod( 'theme_content_feature_image', 'white-spektrum-landscape-medium' );
+	$custom_css = "
+		.layout-wide .site-header .branding-navigation {
+			margin: 0 auto;
+			max-width: 1170px;
+		}
+	";
+
+    switch ($images) {
+        case 'white-spektrum-landscape-medium':
+            $custom_css = "
+                .post-thumbnail .size-white-spektrum-landscape-medium {
+					border-radius: 0.5rem;
+					box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+					display: block;
+					margin: 1.125rem auto;
+					max-width: 100%;
+                }
+            ";
+            break;
+        case 'white-spektrum-landscape-large':
+            $custom_css = "
+                .post-thumbnail .size-white-spektrum-landscape-large {
+					border-radius: 0.5rem;
+					box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+					display: block;
+					margin: 1.125rem auto;
+					max-width: 100%;
+                }
+            ";
+            break;
+        default:
+            $custom_css = "
+                .post-thumbnail .size-white-spektrum-landscape-medium {
+					border-radius: 0.5rem;
+					box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+					display: block;
+					margin: 1.125rem auto;
+					max-width: 100%;
+                }
+            ";
+            break;
+    }
+
+	wp_add_inline_style( 'white-spektrum-screen', $custom_css );
+
+} );
