@@ -15,6 +15,7 @@
 namespace WhiteSpektrum;
 
 use function Backdrop\Theme\is_classicpress;
+use function Backdrop\Fonts\enqueue;
 
 /**
  * Setup Theme Support.
@@ -24,12 +25,9 @@ use function Backdrop\Theme\is_classicpress;
  * @since  1.0.0
  * @access public
  * @return void
- *
- * @link   https://developer.wordpress.org/reference/functions/add_theme_support/
- * @link   https://developer.wordpress.org/themes/basics/theme-functions/
- * @link   https://developer.wordpress.org/reference/functions/load_theme_textdomain/
  */
 add_action( 'after_setup_theme', function() {
+
 		/**
 		 * Content width is a theme feature, when set, it can set the maximum allow width for any content in teh theme like
 		 * oEmbeds and images added to posts.
@@ -52,13 +50,8 @@ add_action( 'after_setup_theme', function() {
 		 * comment list, comment forms, search forms, galleries, and captions.
 		 */
 		if ( ! is_classicpress() ) {
-			add_theme_support( 'html5', [
-				'comment-list',
-				'comment-form',
-				'search-form',
-				'gallery',
-				'caption',
-			] );
+
+			add_theme_support( 'html5', [ 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption' ] );
 		}
 
 		/**
@@ -102,8 +95,8 @@ add_action( 'after_setup_theme', function() {
 add_action( 'init', function() {
 
 	register_nav_menus( [
-		'primary'	=> esc_html__( 'Primary Navigation', 'silver-quantum' ),
-		'social' => esc_html__( 'Social Navigation', 'silver-quantum' )
+		'primary'	=> esc_html__( 'Primary Navigation', 'white-spektrum' ),
+		'social' => esc_html__( 'Social Navigation', 'white-spektrum' )
 	] );
 
 }, 5 );
@@ -129,19 +122,20 @@ add_action( 'widgets_init', function() {
 	$sidebars = [
 		[
 			'id' => 'primary',
-			'name' => esc_html__( 'Primary', 'silver-quantum' )
+			'name' => esc_html__( 'Primary', 'white-spektrum' )
 		],
 		[
 			'id' => 'secondary',
-			'name' => esc_html__( 'Secondary', 'silver-quantum' )
+			'name' => esc_html__( 'Secondary', 'white-spektrum' )
 		],
 		[
 			'id' => 'custom',
-			'name' => esc_html__( 'Custom', 'silver-quantum' )
+			'name' => esc_html__( 'Custom', 'white-spektrum' )
 		],
 	];
 
 	foreach ( $sidebars as $sidebar ) {
+
 		register_sidebar( array_merge( $sidebar, $args ) );
 	}
 }, 5 );
@@ -175,6 +169,7 @@ add_action( 'after_setup_theme', function() {
 } );
 
 add_action( 'backdrop/templates/register', function( $templates ) {
+	
 	$templates->add(
 		'template-custom-sidebar.php', [
 			'label' => esc_html__( 'Custom Sidebar', 'white-spektrum' ),
@@ -195,4 +190,26 @@ add_action( 'backdrop/templates/register', function( $templates ) {
 			'post_types' => [ 'page' ]
 		]
 	);
+} );
+
+/**
+ * Enqueue Google Fonts in WordPress.
+ *
+ * This function hooks into the 'wp_enqueue_scripts' action to enqueue the specified
+ * Google Fonts: 'fira-sans', 'merriweather', and 'tangerine'.
+ */
+add_action( 'wp_enqueue_scripts', function() {
+
+	/**
+	 * Enqueue a list of Google Fonts.
+	 *
+	 * @param array $files An array of Google Fonts to be enqueued.
+	 */
+	array_map( function( $file ) {
+		enqueue( $file );
+	}, [
+		'fira-sans',
+		'merriweather',
+		'tangerine'
+	] );
 } );
