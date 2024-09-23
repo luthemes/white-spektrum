@@ -4,26 +4,73 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0c4ba56ecda88a2989c25ac5555372c7",
+    "content-hash": "fa77bc093f13872a9750ffefa11cd5c6",
     "packages": [
         {
-            "name": "backdrop-dev/customize",
-            "version": "v1.0.2",
+            "name": "backdrop-dev/contracts",
+            "version": "1.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/backdrop-dev/customize.git",
-                "reference": "16715121d85da5be799021335f6e0f8b999ab440"
+                "url": "https://github.com/backdrop-dev/contracts.git",
+                "reference": "4dd506178abea2fc83cf80531ebc7af96deb85e8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/backdrop-dev/customize/zipball/16715121d85da5be799021335f6e0f8b999ab440",
-                "reference": "16715121d85da5be799021335f6e0f8b999ab440",
+                "url": "https://api.github.com/repos/backdrop-dev/contracts/zipball/4dd506178abea2fc83cf80531ebc7af96deb85e8",
+                "reference": "4dd506178abea2fc83cf80531ebc7af96deb85e8",
                 "shasum": ""
             },
             "require": {
-                "backdrop-dev/framework": "^1.0",
                 "php": ">=7.1"
             },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Backdrop\\Contracts\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Benjamin Lu",
+                    "email": "benlumia007@gmail.com",
+                    "homepage": "https://benjlu.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Backdrop Contracts for Backdrop framework.",
+            "homepage": "https://github.com/benlumia007/backdrop-contracts",
+            "keywords": [
+                "classicpress",
+                "wordpress"
+            ],
+            "support": {
+                "issues": "https://github.com/benlumia007/backdrop-contracts/issues",
+                "source": "https://github.com/backdrop-dev/contracts/tree/1.0"
+            },
+            "time": "2024-07-16T18:06:26+00:00"
+        },
+        {
+            "name": "backdrop-dev/customize",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/backdrop-dev/customize.git",
+                "reference": "fe9342d7b36b7b39d1fd81149307f510305f5de3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/backdrop-dev/customize/zipball/fe9342d7b36b7b39d1fd81149307f510305f5de3",
+                "reference": "fe9342d7b36b7b39d1fd81149307f510305f5de3",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -50,27 +97,28 @@
             ],
             "support": {
                 "issues": "https://github.com/backdrop-dev/customize/issues",
-                "source": "https://github.com/backdrop-dev/customize/tree/v1.0.2"
+                "source": "https://github.com/backdrop-dev/customize/tree/develop"
             },
-            "time": "2024-02-29T00:06:27+00:00"
+            "time": "2024-09-11T05:54:53+00:00"
         },
         {
             "name": "backdrop-dev/fonts",
-            "version": "v1.0.1",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/backdrop-dev/fonts.git",
-                "reference": "87415664ae28c413c34818691a2199731844a513"
+                "reference": "29f4a2043861d322f379dd9b95c4fb204239f8dc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/backdrop-dev/fonts/zipball/87415664ae28c413c34818691a2199731844a513",
-                "reference": "87415664ae28c413c34818691a2199731844a513",
+                "url": "https://api.github.com/repos/backdrop-dev/fonts/zipball/29f4a2043861d322f379dd9b95c4fb204239f8dc",
+                "reference": "29f4a2043861d322f379dd9b95c4fb204239f8dc",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.1"
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -97,27 +145,29 @@
             ],
             "support": {
                 "issues": "https://github.com/backdrop-dev/fonts/issues",
-                "source": "https://github.com/backdrop-dev/fonts/tree/v1.0.1"
+                "source": "https://github.com/backdrop-dev/fonts/tree/develop"
             },
-            "time": "2023-06-28T17:08:57+00:00"
+            "time": "2024-07-17T22:48:41+00:00"
         },
         {
             "name": "backdrop-dev/framework",
-            "version": "v1.0.0",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/backdrop-dev/framework.git",
-                "reference": "3e9b07d55713d10f1295d8abedb0e88051c44966"
+                "reference": "850999224860bf53ff0952a0841de41c24db4b13"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/backdrop-dev/framework/zipball/3e9b07d55713d10f1295d8abedb0e88051c44966",
-                "reference": "3e9b07d55713d10f1295d8abedb0e88051c44966",
+                "url": "https://api.github.com/repos/backdrop-dev/framework/zipball/850999224860bf53ff0952a0841de41c24db4b13",
+                "reference": "850999224860bf53ff0952a0841de41c24db4b13",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.1"
+                "backdrop-dev/contracts": "^1.0",
+                "php": ">=7.4"
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "files": [
@@ -147,9 +197,9 @@
             ],
             "support": {
                 "issues": "https://github.com/backdrop-dev/framework/issues",
-                "source": "https://github.com/backdrop-dev/framework/tree/v1.0.0"
+                "source": "https://github.com/backdrop-dev/framework/tree/develop"
             },
-            "time": "2023-06-11T16:13:29+00:00"
+            "time": "2024-08-11T03:48:27+00:00"
         },
         {
             "name": "backdrop-dev/languages",
@@ -157,16 +207,15 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/backdrop-dev/languages.git",
-                "reference": "fd44f376762a23e8daa9d4058653cd4839553220"
+                "reference": "b591867426eaec29e93eb10853abf75f6ea9fd1e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/backdrop-dev/languages/zipball/fd44f376762a23e8daa9d4058653cd4839553220",
-                "reference": "fd44f376762a23e8daa9d4058653cd4839553220",
+                "url": "https://api.github.com/repos/backdrop-dev/languages/zipball/b591867426eaec29e93eb10853abf75f6ea9fd1e",
+                "reference": "b591867426eaec29e93eb10853abf75f6ea9fd1e",
                 "shasum": ""
             },
             "require": {
-                "backdrop-dev/framework": "^1.0",
                 "php": ">=7.1"
             },
             "default-branch": true,
@@ -200,26 +249,26 @@
                 "issues": "https://github.com/backdrop-dev/languages/issues",
                 "source": "https://github.com/backdrop-dev/languages/tree/develop"
             },
-            "time": "2024-03-07T00:15:13+00:00"
+            "time": "2024-07-19T14:59:22+00:00"
         },
         {
             "name": "backdrop-dev/mix",
-            "version": "v1.0.0",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/backdrop-dev/mix.git",
-                "reference": "cf8120285e500607b2d98e6c49bdb40dfded27db"
+                "reference": "d06867563d0bc137773976ba7d6259fa5623fce5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/backdrop-dev/mix/zipball/cf8120285e500607b2d98e6c49bdb40dfded27db",
-                "reference": "cf8120285e500607b2d98e6c49bdb40dfded27db",
+                "url": "https://api.github.com/repos/backdrop-dev/mix/zipball/d06867563d0bc137773976ba7d6259fa5623fce5",
+                "reference": "d06867563d0bc137773976ba7d6259fa5623fce5",
                 "shasum": ""
             },
             "require": {
-                "backdrop-dev/framework": "^1.0",
                 "php": ">=7.1"
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "files": [
@@ -249,13 +298,63 @@
             ],
             "support": {
                 "issues": "https://github.com/backdrop-dev/mix/issues",
-                "source": "https://github.com/backdrop-dev/mix/tree/v1.0.0"
+                "source": "https://github.com/backdrop-dev/mix/tree/develop"
             },
-            "time": "2023-06-11T18:19:55+00:00"
+            "time": "2024-07-17T18:43:56+00:00"
+        },
+        {
+            "name": "backdrop-dev/pagination",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/backdrop-dev/pagination.git",
+                "reference": "9838e8d503880bd38c193fc13c39d41b9fe50e55"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/backdrop-dev/pagination/zipball/9838e8d503880bd38c193fc13c39d41b9fe50e55",
+                "reference": "9838e8d503880bd38c193fc13c39d41b9fe50e55",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/functions-helpers.php"
+                ],
+                "psr-4": {
+                    "Backdrop\\Pagination\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Benjamin Lu",
+                    "email": "benlumia007@gmail.com",
+                    "homepage": "https://luthemes.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Enhanced pagination add-on for the Backdrop framework.",
+            "homepage": "https://github.com/backdrop-dev/pagination",
+            "keywords": [
+                "wordpress"
+            ],
+            "support": {
+                "issues": "https://github.com/backdrop-dev/pagination/issues",
+                "source": "https://github.com/backdrop-dev/pagination/tree/develop"
+            },
+            "time": "2024-08-19T17:42:29+00:00"
         },
         {
             "name": "backdrop-dev/template-helpers",
-            "version": "v1.0.0",
+            "version": "1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/backdrop-dev/template-helpers.git",
@@ -299,29 +398,29 @@
             ],
             "support": {
                 "issues": "https://github.com/backdrop-dev/template-helpers/issues",
-                "source": "https://github.com/backdrop-dev/template-helpers/tree/v1.0.0"
+                "source": "https://github.com/backdrop-dev/template-helpers/tree/1.0"
             },
             "time": "2023-06-11T17:02:35+00:00"
         },
         {
             "name": "backdrop-dev/template-hierarchy",
-            "version": "v1.0.0",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/backdrop-dev/template-hierarchy.git",
-                "reference": "77b1e112e1f256a1172e782a697d972ef3ced538"
+                "reference": "dd5d433a3ef4d783921df3aece4bb8e54392f2eb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/backdrop-dev/template-hierarchy/zipball/77b1e112e1f256a1172e782a697d972ef3ced538",
-                "reference": "77b1e112e1f256a1172e782a697d972ef3ced538",
+                "url": "https://api.github.com/repos/backdrop-dev/template-hierarchy/zipball/dd5d433a3ef4d783921df3aece4bb8e54392f2eb",
+                "reference": "dd5d433a3ef4d783921df3aece4bb8e54392f2eb",
                 "shasum": ""
             },
             "require": {
-                "backdrop-dev/framework": "^1.0",
                 "backdrop-dev/template-helpers": "^1.0",
                 "php": ">=7.1"
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "files": [
@@ -351,30 +450,30 @@
             ],
             "support": {
                 "issues": "https://github.com/backdrop-dev/template-hierarchy/issues",
-                "source": "https://github.com/backdrop-dev/template-hierarchy/tree/v1.0.0"
+                "source": "https://github.com/backdrop-dev/template-hierarchy/tree/develop"
             },
-            "time": "2023-06-11T17:13:54+00:00"
+            "time": "2024-07-16T18:22:24+00:00"
         },
         {
             "name": "backdrop-dev/template-manager",
-            "version": "v1.0.0",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/backdrop-dev/template-manager.git",
-                "reference": "0bba48d882425ed208f8fb9318cbd82c678fcbe1"
+                "reference": "a4fb4a62fcc2cff1cf5a9ed9ef611e0b6d83ad09"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/backdrop-dev/template-manager/zipball/0bba48d882425ed208f8fb9318cbd82c678fcbe1",
-                "reference": "0bba48d882425ed208f8fb9318cbd82c678fcbe1",
+                "url": "https://api.github.com/repos/backdrop-dev/template-manager/zipball/a4fb4a62fcc2cff1cf5a9ed9ef611e0b6d83ad09",
+                "reference": "a4fb4a62fcc2cff1cf5a9ed9ef611e0b6d83ad09",
                 "shasum": ""
             },
             "require": {
-                "backdrop-dev/framework": "^1.0",
                 "backdrop-dev/template-helpers": "^1.0",
                 "backdrop-dev/tools": "^1.0",
                 "php": ">=7.1"
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -400,28 +499,28 @@
             ],
             "support": {
                 "issues": "https://github.com/backdrop-dev/template-manager/issues",
-                "source": "https://github.com/backdrop-dev/template-manager/tree/v1.0.0"
+                "source": "https://github.com/backdrop-dev/template-manager/tree/develop"
             },
-            "time": "2023-06-11T17:32:29+00:00"
+            "time": "2024-07-19T14:55:05+00:00"
         },
         {
             "name": "backdrop-dev/theme",
-            "version": "v1.0.5",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/backdrop-dev/theme.git",
-                "reference": "1f7d3eefdc0aa789914a5369c0104b092be74454"
+                "reference": "b2430ace7d9ba27077f4bb902eddfc0d2e01af23"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/backdrop-dev/theme/zipball/1f7d3eefdc0aa789914a5369c0104b092be74454",
-                "reference": "1f7d3eefdc0aa789914a5369c0104b092be74454",
+                "url": "https://api.github.com/repos/backdrop-dev/theme/zipball/b2430ace7d9ba27077f4bb902eddfc0d2e01af23",
+                "reference": "b2430ace7d9ba27077f4bb902eddfc0d2e01af23",
                 "shasum": ""
             },
             "require": {
-                "backdrop-dev/framework": "^1.0",
                 "php": ">=7.1"
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "files": [
@@ -451,9 +550,9 @@
             ],
             "support": {
                 "issues": "https://github.com/backdrop-dev/theme/issues",
-                "source": "https://github.com/backdrop-dev/theme/tree/v1.0.5"
+                "source": "https://github.com/backdrop-dev/theme/tree/develop"
             },
-            "time": "2024-03-18T22:07:09+00:00"
+            "time": "2024-09-16T00:54:29+00:00"
         },
         {
             "name": "backdrop-dev/tools",
@@ -504,24 +603,24 @@
         },
         {
             "name": "backdrop-dev/view",
-            "version": "v1.0.0",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/backdrop-dev/view.git",
-                "reference": "df2fe0d1f4c16a051fc63b73e744c764bebd85c4"
+                "reference": "d2415ead3597495bfe48a6ef60398e8761edc3fa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/backdrop-dev/view/zipball/df2fe0d1f4c16a051fc63b73e744c764bebd85c4",
-                "reference": "df2fe0d1f4c16a051fc63b73e744c764bebd85c4",
+                "url": "https://api.github.com/repos/backdrop-dev/view/zipball/d2415ead3597495bfe48a6ef60398e8761edc3fa",
+                "reference": "d2415ead3597495bfe48a6ef60398e8761edc3fa",
                 "shasum": ""
             },
             "require": {
-                "backdrop-dev/framework": "^1.0",
                 "backdrop-dev/template-helpers": "^1.0",
                 "backdrop-dev/tools": "^1.0",
                 "php": ">=7.1"
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "files": [
@@ -551,9 +650,9 @@
             ],
             "support": {
                 "issues": "https://github.com/backdrop-dev/view/issues",
-                "source": "https://github.com/backdrop-dev/view/tree/v1.0.0"
+                "source": "https://github.com/backdrop-dev/view/tree/develop"
             },
-            "time": "2023-06-11T17:41:30+00:00"
+            "time": "2024-07-16T20:39:56+00:00"
         }
     ],
     "packages-dev": [
@@ -637,16 +736,16 @@
         },
         {
             "name": "php-parallel-lint/php-parallel-lint",
-            "version": "v1.3.2",
+            "version": "v1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-parallel-lint/PHP-Parallel-Lint.git",
-                "reference": "6483c9832e71973ed29cf71bd6b3f4fde438a9de"
+                "reference": "6db563514f27e19595a19f45a4bf757b6401194e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-parallel-lint/PHP-Parallel-Lint/zipball/6483c9832e71973ed29cf71bd6b3f4fde438a9de",
-                "reference": "6483c9832e71973ed29cf71bd6b3f4fde438a9de",
+                "url": "https://api.github.com/repos/php-parallel-lint/PHP-Parallel-Lint/zipball/6db563514f27e19595a19f45a4bf757b6401194e",
+                "reference": "6db563514f27e19595a19f45a4bf757b6401194e",
                 "shasum": ""
             },
             "require": {
@@ -684,13 +783,17 @@
                     "email": "ahoj@jakubonderka.cz"
                 }
             ],
-            "description": "This tool check syntax of PHP files about 20x faster than serial check.",
+            "description": "This tool checks the syntax of PHP files about 20x faster than serial check.",
             "homepage": "https://github.com/php-parallel-lint/PHP-Parallel-Lint",
+            "keywords": [
+                "lint",
+                "static analysis"
+            ],
             "support": {
                 "issues": "https://github.com/php-parallel-lint/PHP-Parallel-Lint/issues",
-                "source": "https://github.com/php-parallel-lint/PHP-Parallel-Lint/tree/v1.3.2"
+                "source": "https://github.com/php-parallel-lint/PHP-Parallel-Lint/tree/v1.4.0"
             },
-            "time": "2022-02-21T12:50:22+00:00"
+            "time": "2024-03-27T12:14:49+00:00"
         },
         {
             "name": "phpcompatibility/php-compatibility",
@@ -756,28 +859,28 @@
         },
         {
             "name": "phpcompatibility/phpcompatibility-paragonie",
-            "version": "1.3.2",
+            "version": "1.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPCompatibility/PHPCompatibilityParagonie.git",
-                "reference": "bba5a9dfec7fcfbd679cfaf611d86b4d3759da26"
+                "reference": "293975b465e0e709b571cbf0c957c6c0a7b9a2ac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPCompatibility/PHPCompatibilityParagonie/zipball/bba5a9dfec7fcfbd679cfaf611d86b4d3759da26",
-                "reference": "bba5a9dfec7fcfbd679cfaf611d86b4d3759da26",
+                "url": "https://api.github.com/repos/PHPCompatibility/PHPCompatibilityParagonie/zipball/293975b465e0e709b571cbf0c957c6c0a7b9a2ac",
+                "reference": "293975b465e0e709b571cbf0c957c6c0a7b9a2ac",
                 "shasum": ""
             },
             "require": {
                 "phpcompatibility/php-compatibility": "^9.0"
             },
             "require-dev": {
-                "dealerdirect/phpcodesniffer-composer-installer": "^0.7",
+                "dealerdirect/phpcodesniffer-composer-installer": "^1.0",
                 "paragonie/random_compat": "dev-master",
                 "paragonie/sodium_compat": "dev-master"
             },
             "suggest": {
-                "dealerdirect/phpcodesniffer-composer-installer": "^0.7 || This Composer plugin will sort out the PHP_CodeSniffer 'installed_paths' automatically.",
+                "dealerdirect/phpcodesniffer-composer-installer": "^1.0 || This Composer plugin will sort out the PHP_CodeSniffer 'installed_paths' automatically.",
                 "roave/security-advisories": "dev-master || Helps prevent installing dependencies with known security issues."
             },
             "type": "phpcodesniffer-standard",
@@ -807,22 +910,37 @@
             ],
             "support": {
                 "issues": "https://github.com/PHPCompatibility/PHPCompatibilityParagonie/issues",
+                "security": "https://github.com/PHPCompatibility/PHPCompatibilityParagonie/security/policy",
                 "source": "https://github.com/PHPCompatibility/PHPCompatibilityParagonie"
             },
-            "time": "2022-10-25T01:46:02+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/PHPCompatibility",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/jrfnl",
+                    "type": "github"
+                },
+                {
+                    "url": "https://opencollective.com/php_codesniffer",
+                    "type": "open_collective"
+                }
+            ],
+            "time": "2024-04-24T21:30:46+00:00"
         },
         {
             "name": "phpcompatibility/phpcompatibility-wp",
-            "version": "2.1.4",
+            "version": "2.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPCompatibility/PHPCompatibilityWP.git",
-                "reference": "b6c1e3ee1c35de6c41a511d5eb9bd03e447480a5"
+                "reference": "01c1ff2704a58e46f0cb1ca9d06aee07b3589082"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPCompatibility/PHPCompatibilityWP/zipball/b6c1e3ee1c35de6c41a511d5eb9bd03e447480a5",
-                "reference": "b6c1e3ee1c35de6c41a511d5eb9bd03e447480a5",
+                "url": "https://api.github.com/repos/PHPCompatibility/PHPCompatibilityWP/zipball/01c1ff2704a58e46f0cb1ca9d06aee07b3589082",
+                "reference": "01c1ff2704a58e46f0cb1ca9d06aee07b3589082",
                 "shasum": ""
             },
             "require": {
@@ -830,10 +948,10 @@
                 "phpcompatibility/phpcompatibility-paragonie": "^1.0"
             },
             "require-dev": {
-                "dealerdirect/phpcodesniffer-composer-installer": "^0.7"
+                "dealerdirect/phpcodesniffer-composer-installer": "^1.0"
             },
             "suggest": {
-                "dealerdirect/phpcodesniffer-composer-installer": "^0.7 || This Composer plugin will sort out the PHP_CodeSniffer 'installed_paths' automatically.",
+                "dealerdirect/phpcodesniffer-composer-installer": "^1.0 || This Composer plugin will sort out the PHP_CodeSniffer 'installed_paths' automatically.",
                 "roave/security-advisories": "dev-master || Helps prevent installing dependencies with known security issues."
             },
             "type": "phpcodesniffer-standard",
@@ -862,22 +980,37 @@
             ],
             "support": {
                 "issues": "https://github.com/PHPCompatibility/PHPCompatibilityWP/issues",
+                "security": "https://github.com/PHPCompatibility/PHPCompatibilityWP/security/policy",
                 "source": "https://github.com/PHPCompatibility/PHPCompatibilityWP"
             },
-            "time": "2022-10-24T09:00:36+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/PHPCompatibility",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/jrfnl",
+                    "type": "github"
+                },
+                {
+                    "url": "https://opencollective.com/php_codesniffer",
+                    "type": "open_collective"
+                }
+            ],
+            "time": "2024-04-24T21:37:59+00:00"
         },
         {
             "name": "squizlabs/php_codesniffer",
-            "version": "3.9.0",
+            "version": "3.10.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPCSStandards/PHP_CodeSniffer.git",
-                "reference": "d63cee4890a8afaf86a22e51ad4d97c91dd4579b"
+                "reference": "62d32998e820bddc40f99f8251958aed187a5c9c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPCSStandards/PHP_CodeSniffer/zipball/d63cee4890a8afaf86a22e51ad4d97c91dd4579b",
-                "reference": "d63cee4890a8afaf86a22e51ad4d97c91dd4579b",
+                "url": "https://api.github.com/repos/PHPCSStandards/PHP_CodeSniffer/zipball/62d32998e820bddc40f99f8251958aed187a5c9c",
+                "reference": "62d32998e820bddc40f99f8251958aed187a5c9c",
                 "shasum": ""
             },
             "require": {
@@ -944,7 +1077,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2024-02-16T15:06:51+00:00"
+            "time": "2024-09-18T10:38:58+00:00"
         },
         {
             "name": "wp-coding-standards/wpcs",
@@ -1075,12 +1208,21 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "backdrop-dev/languages": 20
+        "backdrop-dev/customize": 20,
+        "backdrop-dev/fonts": 20,
+        "backdrop-dev/framework": 20,
+        "backdrop-dev/languages": 20,
+        "backdrop-dev/mix": 20,
+        "backdrop-dev/pagination": 20,
+        "backdrop-dev/template-hierarchy": 20,
+        "backdrop-dev/template-manager": 20,
+        "backdrop-dev/theme": 20,
+        "backdrop-dev/view": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=7.1"
+        "php": ">=7.4"
     },
     "platform-dev": [],
     "plugin-api-version": "2.6.0"

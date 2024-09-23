@@ -20,13 +20,14 @@
 	<rule ref="WordPress.WP.I18n">
 		<properties>
 			<property name="text_domain" type="array">
-				<element value="silver-quantum"/>
+				<element value="white-spektrum"/>
 			</property>
 		</properties>
 	</rule>
 
 	<!-- Exclude managed libraries -->
 	<exclude-pattern>/vendor/</exclude-pattern>
+	<exclude-pattern>/node_modules/</exclude-pattern>
 
 	<!-- PHP Version Test. Uncomment to use. Install with https://github.com/PHPCompatibility/PHPCompatibility#installation-via-a-git-check-out-to-an-arbitrary-directory-method-2. -->
 	<!-- <config name="testVersion" value="5.2-"/>

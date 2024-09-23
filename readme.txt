@@ -1,10 +1,10 @@
 White Spektrum WordPress Theme
 ================================================================================================
-Contributor: benlumia007
+Contributor: luthemes
 Tags: custom-background, custom-header, right-sidebar
 Requres at least: 4.5
 Tested up to: 4.9.4
-Stable tag: 0.2.9
+Stable tag: 2.0.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
