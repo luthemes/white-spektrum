@@ -44,10 +44,7 @@ mix.setPublicPath( 'public' );
  * @link https://laravel.com/docs/5.6/mix#url-processing
  */
 mix.options( {
-	processCssUrls : false,
-	terser: {
-		extractComments: false,
-	  }
+	processCssUrls : false
 } );
 
 /*
@@ -62,18 +59,21 @@ mix.version();
 /*
  * Compile JavaScript.
  *
- * @link https://laravel.com/docs/5.6/mix#working-with-scripts
+ * @link https://laravel.com/docs/6.x/mix#working-with-stylesheets
  */
-mix.js( `${devPath}/js/app.js`, 'assets/js' );
+mix.js( `${devPath}/js/app.js`, 'assets/js' )
+	.js( `${devPath}/js/navigation.js`, 'assets/js' )
+	.js( `${devPath}/js/customize-controls.js`, 'assets/js' );
+
 
 /*
  * Compile CSS. Mix supports Sass, Less, Stylus, and plain CSS, and has functions
  * for each of them.
  *
- * @link https://laravel.com/docs/5.6/mix#working-with-stylesheets
- * @link https://laravel.com/docs/5.6/mix#sass
- * @link https://github.com/sass/node-sass#options
+ * @link https://laravel.com/docs/6.x/mix#working-with-stylesheets
+ * @link https://laravel.com/docs/6.x/mix#sass
  */
 
 // Compile SASS/CSS.
-mix.sass( `${devPath}/scss/screen.scss`, 'assets/css', );
+mix.sass( `${devPath}/scss/screen.scss`, 'assets/css' )
+	.sass( `${devPath}/scss/customize-controls.scss`, 'assets/css' );
