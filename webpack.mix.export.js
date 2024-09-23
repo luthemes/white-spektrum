@@ -22,7 +22,6 @@ let exportPath = 'white-spektrum';
 
 // Theme root-level files to include.
 let files = [
-	'changelog.md',
 	'functions.php',
 	'index.php',
 	'readme.txt',
