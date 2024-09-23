@@ -4,7 +4,7 @@ Contributor: luthemes
 Tags: custom-background, custom-header, right-sidebar
 Requres at least: 4.5
 Tested up to: 4.9.4
-Stable tag: 2.1
+Stable tag: 2.0.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -67,7 +67,7 @@ Upgrade Notice
 Not Available At the Moment
 
 == Changelog ==
-= 2.1 - TBD =
+= 2.0.4 - 09.23.2024 =
 * Theme relaunch. Everything's new! 
 
 
