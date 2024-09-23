@@ -228,7 +228,7 @@ class General extends View {
 			'name'              => 'white_spektrum_settings[error_page]',
 			'show_option_none'  => '-',
 			'option_none_value' => 0,
-			'selected'          => Options::get( 'error_page' ),
+			'selected'          => Options::get( 'error_page' ), // phpcs:ignore
 			'post_status'       => [ 'private' ],
 			'echo'              => false
 		] ); ?>
