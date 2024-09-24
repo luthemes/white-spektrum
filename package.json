@@ -2,7 +2,7 @@
     "name": "white-spektrum",
     "version": "1.0.0",
     "description": "white-spektrum is a WordPress Starter Theme.",
-    "main": "resources/assets/js/app.js",
+    "main": "resources/js/app.js",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/benlumia007/white-spektrum.git"
