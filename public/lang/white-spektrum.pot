@@ -1,0 +1,539 @@
+# <!=Copyright (C) 2024 Benjamin Lu
+# This file is distributed under the GNU General Public License v2.0 or later.=!>
+msgid ""
+msgstr ""
+"Project-Id-Version: White Spektrum 2.1.2\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/white-spektrum\n"
+"POT-Creation-Date: 2024-09-24 15:49:50+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2024-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: node-wp-i18n 1.2.7\n"
+
+#: app/Customize/Component.php:89
+msgid "Theme: Global"
+msgstr ""
+
+#: app/Customize/Component.php:90
+msgid "Theme: Header"
+msgstr ""
+
+#: app/Customize/Component.php:91
+msgid "Theme: Content"
+msgstr ""
+
+#: app/Customize/Component.php:92
+msgid "Theme: Footer"
+msgstr ""
+
+#: app/Customize/Component.php:121
+msgid "Branding"
+msgstr ""
+
+#: app/Customize/Component.php:126
+msgid "Layout"
+msgstr ""
+
+#: app/Customize/Component.php:136
+msgid "Credit"
+msgstr ""
+
+#: app/Customize/FeatureImage/Customize.php:70
+msgid "Feature Image Size"
+msgstr ""
+
+#: app/Customize/Footer/Customize.php:75
+#. Translators: %s is the theme link.
+msgid "Show random \"powered by\" credit text."
+msgstr ""
+
+#: app/Customize/Footer/Customize.php:82
+msgid "Custom Footer Text"
+msgstr ""
+
+#: app/Customize/Layout/Customize.php:44
+msgid "Global Layout"
+msgstr ""
+
+#: app/Customize/Layout/Customize.php:84
+msgid "General Layout applies to all layouts that supports in this theme."
+msgstr ""
+
+#: app/Settings/Admin/OptionsPage.php:203
+#: app/Settings/Manager/Themes/Theme.php:275
+msgid "Customize"
+msgstr ""
+
+#: app/Settings/Admin/Views/General.php:54
+msgid "General"
+msgstr ""
+
+#: app/Settings/Admin/Views/General.php:120
+msgid "Clean ClassicPress"
+msgstr ""
+
+#: app/Settings/Admin/Views/General.php:120
+msgid "Clean WordPress"
+msgstr ""
+
+#: app/Settings/Admin/Views/General.php:124
+msgid "Reading"
+msgstr ""
+
+#: app/Settings/Admin/Views/General.php:158
+msgid "404 Page"
+msgstr ""
+
+#: app/Settings/Admin/Views/General.php:165
+msgid "Emoji"
+msgstr ""
+
+#: app/Settings/Admin/Views/General.php:170
+msgid "Embeds"
+msgstr ""
+
+#: app/Settings/Admin/Views/General.php:198
+msgid ""
+"Settings related to reading and display options for your site, including "
+"the 404 error page."
+msgstr ""
+
+#: app/Settings/Admin/Views/General.php:213
+msgid ""
+"Clean up unnecessary items on the front end of your site for speed "
+"improvements."
+msgstr ""
+
+#: app/Settings/Admin/Views/General.php:255
+msgid "Add New Page"
+msgstr ""
+
+#: app/Settings/Admin/Views/General.php:264
+msgid ""
+"Select a page to display when users visit a 404 error on your site. Ensure "
+"the page is set to private so it does not appear on the front end."
+msgstr ""
+
+#: app/Settings/Admin/Views/General.php:281
+msgid "Disable Emoji Scripts"
+msgstr ""
+
+#: app/Settings/Admin/Views/General.php:286
+msgid ""
+"All modern browsers support emoji natively. Disabling emoji scripts removes "
+"the JavaScript loaded on every page of your site for a small percentage of "
+"users on outdated browsers."
+msgstr ""
+
+#: app/Settings/Admin/Views/General.php:299
+msgid "Disable ClassicPress Embeds"
+msgstr ""
+
+#: app/Settings/Admin/Views/General.php:299
+msgid "Disable WordPress Embeds"
+msgstr ""
+
+#: app/Settings/Admin/Views/General.php:310
+msgid "Removes the JavaScript that allows other sites to embed your posts."
+msgstr ""
+
+#: app/Settings/Admin/Views/General.php:327
+msgid "Update Settings"
+msgstr ""
+
+#: app/Settings/Admin/Views/Plugins.php:54
+msgid "Plugins"
+msgstr ""
+
+#: app/Settings/Admin/Views/Themes.php:54
+msgid "Themes"
+msgstr ""
+
+#: app/Settings/Manager/Themes/Theme.php:239
+msgid "Active:"
+msgstr ""
+
+#: app/Settings/Manager/Themes/Theme.php:284
+msgid "Activate %s"
+msgstr ""
+
+#: app/Settings/Manager/Themes/Theme.php:285
+msgid "Activate"
+msgstr ""
+
+#: app/Settings/Manager/Themes/Theme.php:294
+msgid "Live Preview"
+msgstr ""
+
+#: app/Settings/Manager/Themes/Theme.php:303
+msgid "Download"
+msgstr ""
+
+#: app/Settings/Provider.php:45
+msgid "Settings"
+msgstr ""
+
+#: app/Template/ErrorPage.php:117
+#: vendor/backdrop-dev/theme/src/Util/Title.php:155
+msgid "404 Not Found"
+msgstr ""
+
+#: app/Template/ErrorPage.php:136
+msgid ""
+"It looks like you stumbled upon a page that does not exist. Perhaps rolling "
+"the dice with a search might help."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:35
+msgid "Powered by heart and soul."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:36
+msgid "Powered by crazy ideas and passion."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:37
+msgid "Powered by the thing that holds all things together in the universe."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:38
+msgid "Powered by love."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:39
+msgid "Powered by the vast and endless void."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:40
+msgid "Powered by the code of a maniac."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:41
+msgid "Powered by peace and understanding."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:42
+msgid "Powered by coffee."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:43
+msgid "Powered by sleepness nights."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:44
+msgid "Powered by the love of all things."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:45
+msgid "Powered by something greater than myself."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:46
+msgid "Powered by whispers from the future."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:47
+msgid "Powered by the fusion of technology and dreams."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:48
+msgid "Powered by the strength found in kindness."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:49
+msgid "Powered by the melodies of the unseen world."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:50
+msgid "Powered by the courage of the unheard voices."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:51
+msgid "Powered by the beauty of the human spirit."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:52
+msgid "Powered by the quest for eternal wisdom."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:53
+msgid "Powered by the energy of uncharted galaxies."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:54
+msgid "Powered by the magic hidden in plain sight."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:55
+msgid "Powered by the legacy of the ancients."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:56
+msgid "Powered by the dance between light and darkness."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:57
+msgid "Powered by the touch of the morning sun."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:58
+msgid "Powered by the secrets of the deep ocean."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:59
+msgid "Powered by the echoes of laughter and joy."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:60
+msgid "Powered by the relentless pursuit of truth."
+msgstr ""
+
+#: app/functions-assets.php:39
+msgid "expand child menu"
+msgstr ""
+
+#: app/functions-assets.php:40
+msgid "collapse child menu"
+msgstr ""
+
+#: app/functions-extras.php:37
+msgid "Home"
+msgstr ""
+
+#: app/functions-extras.php:43 app/functions-setup.php:182
+msgid "Left Sidebar"
+msgstr ""
+
+#: app/functions-extras.php:50 app/functions-setup.php:189
+msgid "Right Sidebar"
+msgstr ""
+
+#: app/functions-filters.php:66
+#. Translators: %s is the post title for screen readers.
+msgid "Continue reading&nbsp;%s&nbsp;&rarr;"
+msgstr ""
+
+#: app/functions-setup.php:98
+msgid "Primary Navigation"
+msgstr ""
+
+#: app/functions-setup.php:99
+msgid "Social Navigation"
+msgstr ""
+
+#: app/functions-setup.php:125
+msgid "Primary"
+msgstr ""
+
+#: app/functions-setup.php:129
+msgid "Secondary"
+msgstr ""
+
+#: app/functions-setup.php:133
+msgid "Custom"
+msgstr ""
+
+#: app/functions-setup.php:165
+msgid "Header Image"
+msgstr ""
+
+#: app/functions-setup.php:175
+msgid "Custom Sidebar"
+msgstr ""
+
+#: config/_settings-mods.php:57
+msgid "&#169; %1$s. %2$s."
+msgstr ""
+
+#: config/_settings-mods.php:60 config/_settings-mods.php:62
+msgid "Powered by %1$s and %2$s."
+msgstr ""
+
+#: config/image-sizes.php:17
+msgid "Landscape: Medium"
+msgstr ""
+
+#: config/image-sizes.php:22
+msgid "Landscape: Large"
+msgstr ""
+
+#: public/views/comment/default.php:6
+#. Translators: %s is the parent comment link.
+msgid "In reply to %s"
+msgstr ""
+
+#: public/views/comment/default.php:35
+#: vendor/backdrop-dev/theme/src/Comments/Component.php:47
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: public/views/comments/default.php:34
+msgid "Older Comments"
+msgstr ""
+
+#: public/views/comments/default.php:35
+msgid "Newer Comments"
+msgstr ""
+
+#: public/views/entry/single.php:4
+msgid "Featured"
+msgstr ""
+
+#: public/views/header/default.php:27
+msgid "Skip to content"
+msgstr ""
+
+#: public/views/menu/primary.php:5
+msgid "Menu"
+msgstr ""
+
+#: vendor/backdrop-dev/pagination/src/Pagination.php:494
+msgid "&hellip;"
+msgstr ""
+
+#: vendor/backdrop-dev/theme/src/Comment/functions-comment.php:271
+msgid "Edit"
+msgstr ""
+
+#: vendor/backdrop-dev/theme/src/Comments/Component.php:30
+#. translators: 1: date, 2: time
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: vendor/backdrop-dev/theme/src/Entry/functions-entry.php:315
+msgid "https://classicpress.net"
+msgstr ""
+
+#: vendor/backdrop-dev/theme/src/Entry/functions-entry.php:316
+#: vendor/backdrop-dev/theme/src/Site/functions-site.php:304
+msgid "ClassicPress"
+msgstr ""
+
+#: vendor/backdrop-dev/theme/src/Site/functions-site.php:264
+msgid "https://wordpress.org"
+msgstr ""
+
+#: vendor/backdrop-dev/theme/src/Site/functions-site.php:265
+msgid "WordPress"
+msgstr ""
+
+#: vendor/backdrop-dev/theme/src/Site/functions-site.php:303
+msgid "https://www.classicpress.net"
+msgstr ""
+
+#: vendor/backdrop-dev/theme/src/Util/Title.php:126
+msgid "Archives"
+msgstr ""
+
+#: vendor/backdrop-dev/theme/src/Util/Title.php:142
+#. Translators: %s is the search query.
+msgid "Search results for: %s"
+msgstr ""
+
+#: vendor/backdrop-dev/theme/src/Util/Title.php:223
+#. Translators: 1 is the week number and 2 is the year.
+msgid "Week %1$s of %2$s"
+msgstr ""
+
+#: vendor/backdrop-dev/theme/src/Util/Title.php:261
+#. Translators: Minute archive title. %s is the minute time format.
+msgid "Minute %s"
+msgstr ""
+
+#: vendor/backdrop-dev/theme/src/functions-filters.php:425
+#. Translators: Used as a placeholder for untitled posts on non-singular views.
+msgid "(Untitled)"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "White Spektrum"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "https://luthemes.com/portfolio/white-spektrum"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"White Spectrum has been transformed into a responsive design, ensuring a "
+"seamless and visually appealing experience on both smartphones and tablets. "
+"This theme is packed with several enticing features, including a custom "
+"header, versatile left and right sidebars, and support for featured images, "
+"enhancing the visual appeal and functionality of your site. Additionally, "
+"it introduces a distinctive approach to mobile navigation; the mobile menu "
+"is innovatively positioned at the bottom left corner, offering users an "
+"intuitive and convenient way to navigate through the site. This thoughtful "
+"placement significantly improves accessibility and user experience, making "
+"navigation effortless and user-friendly."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Benjamin Lu"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://luthemes.com"
+msgstr ""
+
+#: app/functions-template.php:29
+msgctxt "meta separator"
+msgid "&middot;"
+msgstr ""
+
+#: public/views/comments/default.php:14
+msgctxt "comments title"
+msgid "One Comment"
+msgstr ""
+
+#: public/views/comments/default.php:17
+#. Translators: 1 = counts.
+msgctxt "comments title"
+msgid "%1$s Comment"
+msgid_plural "%1$s Comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: vendor/backdrop-dev/theme/src/Entry/functions-entry.php:372
+#. Translators: Separates tags, categories, etc. when displaying a post.
+msgctxt "taxonomy terms separator"
+msgid ", "
+msgstr ""
+
+#: vendor/backdrop-dev/theme/src/Util/Title.php:188
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr ""
+
+#: vendor/backdrop-dev/theme/src/Util/Title.php:210
+#: vendor/backdrop-dev/theme/src/Util/Title.php:225
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#: vendor/backdrop-dev/theme/src/Util/Title.php:224
+msgctxt "weekly archives date format"
+msgid "W"
+msgstr ""
+
+#: vendor/backdrop-dev/theme/src/Util/Title.php:237
+msgctxt "daily archives date format"
+msgid "F j, Y"
+msgstr ""
+
+#: vendor/backdrop-dev/theme/src/Util/Title.php:248
+msgctxt "hour archives time format"
+msgid "g a"
+msgstr ""
+
+#: vendor/backdrop-dev/theme/src/Util/Title.php:262
+msgctxt "minute archives time format"
+msgid "i"
+msgstr ""
+
+#: vendor/backdrop-dev/theme/src/Util/Title.php:274
+msgctxt "minute and hour archives time format"
+msgid "g:i a"
+msgstr ""

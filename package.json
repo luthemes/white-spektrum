@@ -20,7 +20,7 @@
         "export": "mix --mix-config=webpack.mix.export.js",
         "i18n": "npm run i18n:textdomain && npm run i18n:pot",
         "i18n:textdomain": "npx wpi18n addtextdomain --exclude=vendor,node_modules",
-        "i18n:pot": "npx wpi18n makepot --domain-path=/resources/lang"
+        "i18n:pot": "npx wpi18n makepot --domain-path=/public/lang"
     },
     "devDependencies": {
         "laravel-mix": "^6.0.49",
