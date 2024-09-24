@@ -4,6 +4,7 @@
 
 ### Added
 * Add pagination styles
+* Make sure we display navigations properly
 
 ## 2.1.1 - 09.23.2024
 

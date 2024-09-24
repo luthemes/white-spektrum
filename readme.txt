@@ -69,6 +69,7 @@ Not Available At the Moment
 == Changelog ==
 = 2.1.2 - 09.24.2024 =
 * add pagination styles
+* Make sure that we display navigation properly
 
 = 2.1.1 - 09.23.2024 =
 * make sure that we remove $args from wp_link_page()
