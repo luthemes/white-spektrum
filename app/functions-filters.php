@@ -71,16 +71,22 @@ add_filter( 'excerpt_more', function() {
 
 add_filter( 'walker_nav_menu_start_el', function( $item_output, $item, $depth, $args ) {
 
-	if ( 'social' === $args->theme_location ) {
+	// Check if the theme location is set and if it's "social".
+	if ( isset( $args->theme_location ) && 'social' === $args->theme_location ) {
 
+		// Loop through the social icons and replace the link output.
 		foreach ( Config::get( 'social-icons' ) as $url => $icon ) {
 			if ( false !== strpos( $item->url, $url ) ) {
-				$item_output = str_replace(
-					$args->link_before,
-					Svg::display( $icon ) . $args->link_before,
-					$item_output
-				);
+				
+				// Replace the entire content of the link with just the icon.
+				$item_output = '<a href="' . esc_url( $item->url ) . '" class="social-link">' . Svg::display( $icon ) . '</a>';
 			}
 		}
 	}
+
+	// Always return the item output, ensuring no disruption to non-social menus.
+	return $item_output;
+
 }, 10, 4 );
+
+
