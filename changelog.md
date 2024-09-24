@@ -1,5 +1,10 @@
 # Change Log
 
+## 2.1.2 - 09.24.2024
+
+### Added
+* Add pagination styles
+
 ## 2.1.1 - 09.23.2024
 
 ### Bug
