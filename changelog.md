@@ -1,5 +1,14 @@
 # Change Log
 
+## 2.1.4 - 09.25.2024
+### Ehancement
+- Replace screenshot.png
+
+## 2.1.3 - 09.24.2024
+
+### Enhancement
+* change pagination styles
+
 ## 2.1.2 - 09.24.2024
 
 ### Added
