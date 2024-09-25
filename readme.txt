@@ -2,9 +2,9 @@ White Spektrum WordPress Theme
 ================================================================================================
 Contributor: luthemes
 Tags: custom-background, custom-header, right-sidebar
-Requres at least: 4.5
+Requres at least: 4.9
 Tested up to: 4.9.4
-Stable tag: 2.1.2
+Stable tag: 2.1.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -67,6 +67,9 @@ Upgrade Notice
 Not Available At the Moment
 
 == Changelog ==
+= 2.1.3 - 09.24.2024 =
+* change pagination styles
+
 = 2.1.2 - 09.24.2024 =
 * add pagination styles
 * Make sure that we display navigation properly
