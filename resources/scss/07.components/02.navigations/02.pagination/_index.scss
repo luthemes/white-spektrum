@@ -1,50 +1,63 @@
+/* Container Styling */
 .navigation.pagination {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px 0;
-    padding: 10px;
-    background-color: #fff;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
-.navigation.pagination .nav-links {
+.navigation .nav-links {
     display: flex;
-    gap: 10px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
 }
 
-.navigation.pagination a.page-numbers,
-.navigation.pagination .page-numbers.current {
-    display: inline-block;
-    padding: 5px 10px;
-    border-radius: 3px;
-    text-decoration: none;
-    color: #000;
-    background-color: #fff;
-    border: 1px solid #000;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.navigation.pagination .page-numbers.current {
-    background-color: #000;
+/* Current Page Styles */
+.page-numbers.current {
+    background-color: #333; /* Replace with your primary color */
     color: #fff;
-    border-color: #000;
-}
-
-.navigation.pagination a.page-numbers:hover {
-    background-color: #000;
-    color: #fff;
-}
-
-.navigation.pagination a.next {
+    border-radius: 0.25rem;
+    padding: 0.25rem 1rem;
     font-weight: bold;
 }
 
-@media (max-width: 768px) {
-    .navigation.pagination {
-        flex-direction: column;
+/* Number Links */
+.page-numbers {
+    color: #333;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 0.25rem;
+    margin-right: 0.75rem;
+    text-decoration: none;
+    padding: 0.25rem 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+    display: block;
+}
+
+/* Hover and Focus States */
+.page-numbers:hover,
+.page-numbers:focus {
+    background-color: #333;
+    color: #fff;
+}
+
+.next.page-numbers::after {
+    margin-left: 0.5rem;
+}
+
+/* Small Screens Adjustments */
+@media (max-width: 640px) {
+    .page-numbers {
+        margin-right: 0.5rem;
     }
 
-    .navigation.pagination .nav-links {
-        gap: 5px;
+    .page-numbers,
+    .page-numbers.current {
+        padding: 0.375rem 0.75rem;
+        font-size: 0.875rem;
     }
 }
