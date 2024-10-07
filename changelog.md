@@ -1,5 +1,10 @@
 # Change Log
 
+## 2.1.5 - 10.07.2024
+
+### Bug
+- Fix Social Navigation
+
 ## 2.1.4 - 09.25.2024
 ### Ehancement
 - Replace screenshot.png
