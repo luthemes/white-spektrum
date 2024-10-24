@@ -1,5 +1,9 @@
 # Change Log
 
+## 2.1.6 - 10.24.2024
+### Ehancement
+- Keep jsonSerialize from deprecated when using PHP 8.2 or higher.
+
 ## 2.1.5 - 10.07.2024
 
 ### Bug

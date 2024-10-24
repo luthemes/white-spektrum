@@ -4,7 +4,7 @@ Contributor: luthemes
 Tags: custom-background, custom-header, right-sidebar
 Requres at least: 4.9
 Tested up to: 4.9.4
-Stable tag: 2.1.5
+Stable tag: 2.1.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -67,6 +67,9 @@ Upgrade Notice
 Not Available At the Moment
 
 == Changelog ==
+= 2.1.6 - 10.24.2024 =
+* Silent jsonSerialize for now.
+
 = 2.1.5 - 10.07.2024 =
 * Fixed Social navigation
 
