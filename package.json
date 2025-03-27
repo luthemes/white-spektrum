@@ -5,14 +5,14 @@
     "main": "resources/js/app.js",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/benlumia007/white-spektrum.git"
+        "url": "git+https://github.com/luthemes/white-spektrum.git"
     },
     "author": "Benjamin Lu",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/benlumia007/white-spektrum/issues"
+        "url": "https://github.com/luthemes/white-spektrum/issues"
     },
-    "homepage": "https://github.com/benlumia007/white-spektrum#readme",
+    "homepage": "https://github.com/luthemes/white-spektrum#readme",
     "scripts": {
         "build": "npm run prod && npm run i18n && npm run export",
         "watch": "mix watch",
