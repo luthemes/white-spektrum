@@ -18,15 +18,18 @@
     },
 	"require": {
 		"php": ">=7.4",
+		"backdrop-dev/contracts": "dev-develop",
 		"backdrop-dev/customize": "dev-develop",
 		"backdrop-dev/fonts": "dev-develop",
-		"backdrop-dev/framework": "dev-develop",
+		"backdrop-dev/framework": "2.0.x-dev",
 		"backdrop-dev/languages": "dev-develop",
 		"backdrop-dev/mix": "dev-develop",
 		"backdrop-dev/pagination": "dev-develop",
 		"backdrop-dev/template-hierarchy": "dev-develop",
+		"backdrop-dev/template-helpers": "dev-develop",
 		"backdrop-dev/template-manager": "dev-develop",
 		"backdrop-dev/theme": "dev-develop",
+		"backdrop-dev/tools": "dev-develop",
 		"backdrop-dev/view": "dev-develop"
 	},
 	"require-dev": {
