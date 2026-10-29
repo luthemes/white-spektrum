@@ -1,16 +1,17 @@
-/**
+/*!
  * Theme Name:        White Spektrum
  * Theme URI:         https://luthemes.com/portfolio/white-spektrum
  * Author:            Benjamin Lu
  * Author URI:        https://luthemes.com
- * Description:       White Spectrum has been transformed into a responsive design, ensuring a seamless and visually appealing experience on both smartphones and tablets. This theme is packed with several enticing features, including a custom header, versatile left and right sidebars, and support for featured images, enhancing the visual appeal and functionality of your site. Additionally, it introduces a distinctive approach to mobile navigation; the mobile menu is innovatively positioned at the bottom left corner, offering users an intuitive and convenient way to navigate through the site. This thoughtful placement significantly improves accessibility and user experience, making navigation effortless and user-friendly.
+ * Description:       White Spektrum has been transformed into a responsive design, ensuring a seamless and visually appealing experience on both smartphones and tablets. This theme is packed with several enticing features, including a custom header, versatile left and right sidebars, and support for featured images, enhancing the visual appeal and functionality of your site. Additionally, it introduces a distinctive approach to mobile navigation; the mobile menu is innovatively positioned at the bottom left corner, offering users an intuitive and convenient way to navigate through the site. This thoughtful placement significantly improves accessibility and user experience, making navigation effortless and user-friendly.
  * License:           GNU General Public License v2.0 or later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * Tags:              grid-layout, left-sidebar, one-column, right-sidebar, two-columns, custom-background, custom-colors, custom-header, custom-logo, custom-menu, featured-images, footer-widgets, post-formats, sticky-post, theme-options, threaded-comments, translation-ready, blog
- * Requires CP:       2.0
- * Tested up to:      6.3
- * Requires at least: 4.9
- * Requires PHP:      7.4
- * Version:           0.0.1
+ * Tags:              left-sidebar, one-column, right-sidebar, two-columns, custom-header, custom-menu, featured-images, sticky-post, theme-options, threaded-comments, translation-ready, blog
  * Text Domain:       white-spektrum
+ * Domain Path:       /public/lang
+ * Requires CP:       2.0
+ * Requires PHP:      7.4
+ * Requires at least: 5.9
+ * Tested up to:      6.2
+ * Version:           0.1.0
  */
