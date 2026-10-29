@@ -4,11 +4,11 @@
  *
  * Displays the plugins view (tab) on the settings page.
  *
- * @package   Amicable
+ * @package   White Spektrum
  * @author    Benjamin Lu <benlumia007@gmail.com>
  * @copyright 2024 Benjamin Lu
  * @license   https://www.gnu.org/licenses/gpl-2.0.html
- * @link      https://luthemes.com/portfolio/amicable
+ * @link      https://luthemes.com/portfolio/white-spektrum
  */
 
 namespace WhiteSpektrum\Settings\Admin\Views;
@@ -65,7 +65,7 @@ class Plugins extends View {
 	public function register() {
 
 		// Register plugins.
-		add_action( 'amicable/settings/admin/view/plugins/register', [ $this, 'registerDefaultPlugins' ] );
+		add_action( 'white/spektrum/settings/admin/view/plugins/register', [ $this, 'registerDefaultPlugins' ] );
 	}
 
 	/**
@@ -79,7 +79,7 @@ class Plugins extends View {
 	public function boot() {
 		$this->plugins = new PluginCollection();
 
-		do_action( 'amicable/settings/admin/view/plugins/register', $this->plugins );
+		do_action( 'white/spektrum/settings/admin/view/plugins/register', $this->plugins );
 	}
 
 	/**

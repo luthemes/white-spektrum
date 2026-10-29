@@ -59,7 +59,7 @@ class Customize extends Customizable {
 	 */
 	public function registerControls( WP_Customize_Manager $manager ) {
 
-        $choices = [ '' => '' ];
+        $choices = [];
 
         foreach ( Config::get( 'image-sizes' ) as $name => $size ) {
             $choices[ $name ] = $size['label'];

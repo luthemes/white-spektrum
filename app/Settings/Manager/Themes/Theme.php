@@ -4,11 +4,11 @@
  *
  * Creates a theme object.
  *
- * @package   Amicable
+ * @package   White Spektrum
  * @author    Benjamin Lu <benlumia007@gmail.com>
  * @copyright 2024 Benjamin Lu
  * @license   https://www.gnu.org/licenses/gpl-2.0.html
- * @link      https://luthemes.com/portfolio/amicable
+ * @link      https://luthemes.com/portfolio/white-spektrum
  */
 
 namespace WhiteSpektrum\Settings\Manager\Themes;
@@ -281,6 +281,7 @@ class Theme {
 				$actions[] = sprintf(
 					'<a class="button activate" href="%s" aria-label="%s">%s</a>',
 					esc_url( $this->activateUrl() ),
+					// Translators: %s is the theme name.
 					esc_attr( sprintf( __( 'Activate %s', 'white-spektrum' ), $this->label() ) ),
 					esc_html__( 'Activate', 'white-spektrum' )
 				);

@@ -20,7 +20,12 @@
 # instance via the `Backdrop\app()` function or `Backdrop\App` static class after 
 # the application has booted.
 
-$theme = Backdrop\booted() ? Backdrop\app() : new Backdrop\Core\Application();
+// `Backdrop\booted()` was added on the framework's `develop` branch. If an older copy of the
+// framework is loaded first (for example, one bundled with a plugin), fall back to creating a
+// new application.
+$theme = function_exists( 'Backdrop\booted' ) && Backdrop\booted()
+	? Backdrop\app()
+	: new Backdrop\Core\Application();
 
 # ------------------------------------------------------------------------------
 # Register default service providers with the application.
@@ -30,14 +35,7 @@ $theme = Backdrop\booted() ? Backdrop\app() : new Backdrop\Core\Application();
 # for running the theme. Service providers are essentially the backbone of the
 # bootstrapping process.
 
-// $theme->provider( Backdrop\Customize\Provider::class );
 $theme->provider( Backdrop\Fonts\Provider::class );
-$theme->provider( Backdrop\Languages\Provider::class );
-$theme->provider( Backdrop\Mix\Provider::class );
-$theme->provider( Backdrop\Template\Hierarchy\Provider::class );
-$theme->provider( Backdrop\Template\Manager\Provider::class );
-$theme->provider( Backdrop\Theme\Provider::class );
-$theme->provider( Backdrop\View\Provider::class );
 
 # ------------------------------------------------------------------------------
 # Register additional service providers with the application.
@@ -48,9 +46,12 @@ $theme->provider( Backdrop\View\Provider::class );
 
 $theme->provider( WhiteSpektrum\Provider::class );
 $theme->provider( WhiteSpektrum\CleanWP\Provider::class );
+// Boots the theme's customize component, which extends the framework's
+// `Backdrop\Customize\Component`, so `Backdrop\Customize\Provider` isn't registered as well.
 $theme->provider( WhiteSpektrum\Customize\Provider::class );
 $theme->provider( WhiteSpektrum\FeatureImage\Provider::class );
 $theme->provider( WhiteSpektrum\Settings\Provider::class );
+$theme->provider( WhiteSpektrum\Vite\Provider::class );
 
 # ------------------------------------------------------------------------------
 # Perform bootstrap actions.

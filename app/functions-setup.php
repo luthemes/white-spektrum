@@ -14,7 +14,7 @@
  */
 namespace WhiteSpektrum;
 
-use function Backdrop\Theme\is_classicpress;
+use function Backdrop\is_classicpress;
 use function Backdrop\Fonts\enqueue;
 
 /**
@@ -147,7 +147,7 @@ add_action( 'after_setup_theme', function() {
 
 		add_theme_support( 'custom-header',
 			[
-				'default-text-color' => 'ffffff',
+				'default-text-color' => '000000',
 				'default-image'      => get_theme_file_uri( '/public/images/header-image.jpg' ),
 				'height'             => 1200,
 				'max-width'          => 2000,

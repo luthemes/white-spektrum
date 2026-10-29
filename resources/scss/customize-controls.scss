@@ -1,10 +1,17 @@
-li.customize-control-radio-image input[type="radio"] {
-	display: none;
+/* Controls whose active callback is false (see customize-controls.js). */
+li.customize-control.white-spektrum-control-inactive {
+	display: none !important;
 }
 
-li.customize-control-radio-image label,
-li.customize-control-radio-image input,
-li.customize-control-radio-image img {
+/* Visually hidden rather than display: none, so the layouts can still be chosen with the keyboard. */
+li.customize-control-backdrop-radio-image input[type="radio"] {
+	position: absolute;
+	opacity: 0;
+}
+
+li.customize-control-backdrop-radio-image label,
+li.customize-control-backdrop-radio-image input,
+li.customize-control-backdrop-radio-image img {
 	outline: none !important;
 	-webkit-box-shadow: none !important;
 	-moz-box-shadow: none !important;
@@ -12,11 +19,11 @@ li.customize-control-radio-image img {
 	box-shadow: none !important;
 }
 
-li.customize-control-radio-image label {
+li.customize-control-backdrop-radio-image label {
 	display: inline-block;
 }
 
-li.customize-control-radio-image img {
+li.customize-control-backdrop-radio-image img {
 	width: 100%;
 	height: auto;
 	border: 4px solid transparent;
@@ -27,11 +34,21 @@ li.customize-control-radio-image img {
 	box-sizing: border-box;
 }
 
-li.customize-control-radio-image img:hover,
-li.customize-control-radio-image img:focus {
+li.customize-control-backdrop-radio-image img:hover,
+li.customize-control-backdrop-radio-image img:focus {
 	border-color: #ccc;
 }
 
-li.customize-control-radio-image input:checked + img {
+li.customize-control-backdrop-radio-image label {
+	cursor: pointer;
+	margin: 0 8px 8px 0;
+}
+
+/* The label's screen reader text sits between the radio and the image. */
+li.customize-control-backdrop-radio-image input:checked ~ img {
 	border-color: #00a0d2;
+}
+
+li.customize-control-backdrop-radio-image input:focus-visible ~ img {
+	outline: 2px solid #2271b1 !important;
 }

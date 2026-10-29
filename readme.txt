@@ -1,103 +1,42 @@
 === White Spektrum ===
-Contributor: luthemes
-Tags: custom-background, custom-header, right-sidebar
+Contributors: luthemes
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-White Spektrum WordPress Theme, Copyright (C) 2016, Benjamin Lu
-White Spektrum is distributed under the terms of the GNU GPL
+== Description ==
+White Spektrum has been transformed into a responsive design, ensuring a seamless and visually appealing experience on both smartphones and tablets. This theme is packed with several enticing features, including a custom header, versatile left and right sidebars, and support for featured images, enhancing the visual appeal and functionality of your site. Additionally, it introduces a distinctive approach to mobile navigation; the mobile menu is innovatively positioned at the bottom left corner, offering users an intuitive and convenient way to navigate through the site. This thoughtful placement significantly improves accessibility and user experience, making navigation effortless and user-friendly.
 
-White Spektrum is a standard design with responsive capability.
+== Installation ==
+1. In your admin panel when logged in, go to Appearance -> Themes and Click on Add New.
+2. Click on Upload and choose File, then select the theme's zip file and click Install Now.
+3. Once the theme is installed, click on Activate to begin using this theme.
 
+== Customizer ==
+Go to Appearance -> Customize.
+* Theme: Header - Site Identity, Colors (header text color) and Header Image. Unchecking Display Site Title and Tagline hides them from view; screen readers still read them.
+* Theme: Content - Homepage Settings, Global Layout (left or right sidebar) and Feature Image size.
+* Theme: Footer - Credit. Show the "Powered by" credit, or replace it with your own text.
+* Theme: Global - Additional CSS.
 
-Installation
-================================================================================================
-1. In your admin panel, go to Appearance -> Themes and click the Add New button.
-2. Click Upload and Choose File, then select the theme's ZIP file. Click Install Now.
-3. Click Activate to use your new theme right away.
+On small screens, the menu opens from a Menu button at the bottom left corner of the screen, where it's easy to reach with your thumb.
 
-Customizer
-================================================================================================
-1. In your admin panel, go to Appearance -> Customize
-2. List of different types that you can modify such as
-   - Site Title Tagline
-      - Hide Display Header Text (this will hide the entire header with header text)
-3. Mobile Menu
-   - The Mobile Menu is slightly different from other themes. I have created a mobile menu that is
-     at the bottom left corner that helps users to navigation easier. The reason why is that 90% of
-     users when using their device, their hands are always at the bottom of the screen which kind of
-     makes the mobile menu more sense to have it at the bottom left corner. The Menu itself when is not
-     set, the Site Title and Tagline will move to the center, if set, the Site Title and Tagline will move
-     to the left while the menu is at the right side.
-4. Header Image
-   - Add Header Image
-   - Remove Header Image (When removing a header image, the default image will display).
-5. Layouts Supports
-   - Post Layouts
-   - Page layouts
-   - Custom Layouts
-   - Archive Layouts
-   The Layout Supports gives the user the ability to change their layouts if they choose to do so.
-6. Static Front Page
-   - Front Page
-   - Blog
+Appearance -> Settings has the theme's own settings, such as turning off emoji and embeds.
 
+== Resources ==
+This theme bundles the following resources
+* [FontAwesome](https://fontawesome.com) - [CC by 4.0 License](https://creativecommons.org/licenses/by/4.0) - The social menu icons.
+* [Backdrop](https://github.com/backdrop-dev) - By Benjamin Lu - GNU  GPL, version 2 or higher.
 
-Description
-================================================================================================
-White Spektrum is a fully responsive WordPress theme that looks great on smartphones and tablets. 
-Custom Background, Custom Header is now available so that you can choose more features for this theme. 
-This theme also supports new features that allows you to choose different layouts from blog layout, page 
-layout and custom layout if you choose to use sidebars or no sidebars.
+This theme bundles the following open-source fonts, served from the theme itself.
 
-
-Frequently Asked Questions
-================================================================================================
-Why does the theme look slightly different form the original?
-As a developer, will need to keep up with the standard practice throughout the years active on 
-WordPress.org. I didn't know much about coding or standard when I started, but throughout the years,
-I have improved my understanding so that I can make this theme better. 
-
-Upgrade Notice
-================================================================================================
-Not Available At the Moment
+* [Fira Sans](https://fonts.google.com/specimen/Fira+Sans) ([SIL Open Font License 1.1](http://scripts.sil.org/OFL))
+* [Merriweather](https://fonts.google.com/specimen/Merriweather) ([SIL Open Font License 1.1](http://scripts.sil.org/OFL))
+* [Tangerine](https://fonts.google.com/specimen/Tangerine) ([SIL Open Font License 1.1](http://scripts.sil.org/OFL))
 
 == Changelog ==
-= 2.1.6 - 10.24.2024 =
-* Silent jsonSerialize for now.
+See changelog.md.
 
-= 2.1.5 - 10.07.2024 =
-* Fixed Social navigation
-
-= 2.1.4 - 09.25.2024 =
-* Replace screenshot.png
-
-= 2.1.3 - 09.24.2024 =
-* change pagination styles
-
-= 2.1.2 - 09.24.2024 =
-* add pagination styles
-* Make sure that we display navigation properly
-
-= 2.1.1 - 09.23.2024 =
-* make sure that we remove $args from wp_link_page()
-
-= 2.1 - 09.23.2024 =
-* Theme relaunch. Everything's new! 
-
-
-Resources
-================================================================================================
-Font Awesome by Dave Gandy - http://fontawesome.io
-Font Awesome licensed under SIL OFL 1.1 Â· Code licensed under MIT License
-Source: http://fortawesome.github.io/Font-Awesome/
-
-Merriweather Sans (Google Font)
-Designer: Sorkin Type
-License: Sil Open Font License
-Source: https://fonts.google.com/specimen/Merriweather+Sans
-
-Sanchez (Google Font)
-Designer: Daniel Hernandez
-License: Sil Open Font License
-Source: https://fonts.google.com/specimen/Sanchez
+== Copyright ==
+White Spektrum is licensed under the GNU Public License, version 2 or later (GPL).
+This theme is copyrighted to [luthemes](https://luthemes.com)
+2014-2026. © luthemes

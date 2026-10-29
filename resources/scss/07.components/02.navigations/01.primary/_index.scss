@@ -113,7 +113,8 @@
 	}
 }
 
-@media  screen and ( min-width: 73.188rem ) {
+// Starts right after the mobile menu (max-width: 768px), so there is no gap between them.
+@media screen and ( min-width: 769px ) {
 	.top-navigation {
 		padding: 1.125rem;
 

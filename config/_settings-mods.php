@@ -16,7 +16,7 @@
  * @link      https://luthemes.com/portfolio/white-spektrum
  */
 
-use function Backdrop\Theme\is_classicpress;
+use function Backdrop\is_classicpress;
 
 return [
 
@@ -54,12 +54,15 @@ return [
 	// Default footer credit text.
 	'theme_footer_custom_credit' => function() {
 		$year = gmdate( 'Y' ); // Get the current year
-		$copyright = sprintf( __( "&#169; %1\$s. %2\$s.", 'white-spektrum' ), $year, Backdrop\Theme\Site\render_home_link() );
+		// Translators: 1 is the current year, 2 is a link to the home page.
+		$copyright = sprintf( __( "&#169; %1\$s. %2\$s.", 'white-spektrum' ), $year, Backdrop\Site\render_home_link() );
 
 		if ( is_classicpress() ) {
-			$footer_text = sprintf( __( "Powered by %1\$s and %2\$s.", 'white-spektrum' ), Backdrop\Theme\Site\render_cp_link(), Backdrop\Theme\Site\render_theme_link() );
+			// Translators: 1 is a link to ClassicPress or WordPress, 2 is a link to the theme.
+			$footer_text = sprintf( __( "Powered by %1\$s and %2\$s.", 'white-spektrum' ), Backdrop\Site\render_cp_link(), Backdrop\Site\render_theme_link() );
 		} else {
-			$footer_text = sprintf( __( "Powered by %1\$s and %2\$s.", 'white-spektrum' ), Backdrop\Theme\Site\render_wp_link(), Backdrop\Theme\Site\render_theme_link() );
+			// Translators: 1 is a link to ClassicPress or WordPress, 2 is a link to the theme.
+			$footer_text = sprintf( __( "Powered by %1\$s and %2\$s.", 'white-spektrum' ), Backdrop\Site\render_wp_link(), Backdrop\Site\render_theme_link() );
 		}
 
 		return $copyright . ' <br /> ' . $footer_text;
