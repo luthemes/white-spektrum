@@ -1,5 +1,12 @@
+/* Controls whose active callback is false (see customize-controls.js). */
+li.customize-control.white-spektrum-control-inactive {
+	display: none !important;
+}
+
+/* Visually hidden rather than display: none, so the layouts can still be chosen with the keyboard. */
 li.customize-control-backdrop-radio-image input[type="radio"] {
-	display: none;
+	position: absolute;
+	opacity: 0;
 }
 
 li.customize-control-backdrop-radio-image label,
@@ -32,6 +39,16 @@ li.customize-control-backdrop-radio-image img:focus {
 	border-color: #ccc;
 }
 
-li.customize-control-backdrop-radio-image input:checked + img {
+li.customize-control-backdrop-radio-image label {
+	cursor: pointer;
+	margin: 0 8px 8px 0;
+}
+
+/* The label's screen reader text sits between the radio and the image. */
+li.customize-control-backdrop-radio-image input:checked ~ img {
 	border-color: #00a0d2;
+}
+
+li.customize-control-backdrop-radio-image input:focus-visible ~ img {
+	outline: 2px solid #2271b1 !important;
 }
