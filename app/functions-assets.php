@@ -104,3 +104,30 @@ add_action( 'wp_enqueue_scripts', function() {
 	wp_add_inline_style( 'white-spektrum-screen', $custom_css );
 
 } );
+
+/**
+ * Applies the Header Text Color and Display Site Title and Tagline settings.
+ *
+ * @since  1.0.0
+ * @access public
+ * @return void
+ */
+add_action( 'wp_enqueue_scripts', function() {
+
+	if ( ! display_header_text() ) {
+		// Hidden visually, but still read by screen readers.
+		$css = '.site-title, .site-description { position: absolute; clip: rect(1px, 1px, 1px, 1px); clip-path: inset(50%); width: 1px; height: 1px; overflow: hidden; }';
+	} elseif ( get_header_textcolor() !== get_theme_support( 'custom-header', 'default-text-color' ) ) {
+		$color = sanitize_hex_color_no_hash( get_header_textcolor() );
+
+		if ( ! $color ) {
+			return;
+		}
+
+		$css = sprintf( '.site-title a, .site-title a:hover, .site-title a:focus, .site-description { color: #%s; }', $color );
+	} else {
+		return;
+	}
+
+	wp_add_inline_style( 'white-spektrum-screen', $css );
+}, 20 );

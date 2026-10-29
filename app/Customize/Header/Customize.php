@@ -59,11 +59,10 @@ class Customize extends Customizable {
 	 * @return void
 	 */
 	public function registerSettings( WP_Customize_Manager $manager ) {
-        $manager->get_setting( 'header_textcolor' )->transport = 'postMessage';
+		// `header_textcolor` keeps core's `refresh` transport: the theme has no preview
+		// script to apply it with `postMessage`.
 		$manager->get_setting( 'header_textcolor' )->priority = 5;
-
-
-    }
+	}
 
 	/**
 	 * Registers customizer controls.
