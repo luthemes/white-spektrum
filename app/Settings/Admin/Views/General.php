@@ -14,7 +14,7 @@
 namespace WhiteSpektrum\Settings\Admin\Views;
 
 use WhiteSpektrum\Settings\Options;
-use function Backdrop\Theme\is_classicpress;
+use function Backdrop\is_classicpress;
 
 /**
  * General settings view class.

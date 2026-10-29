@@ -1,6 +1,6 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php Backdrop\Theme\Entry\display_title(); ?>
+		<?php Backdrop\Post\display_title( [ 'class' => 'entry-title' ] ); ?>
 	</header>
 	<?php if ( has_post_thumbnail() ) { ?>
 		<picture class="post-thumbnail">

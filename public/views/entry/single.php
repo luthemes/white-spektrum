@@ -3,11 +3,11 @@
 		<?php if ( is_sticky() && is_home() && ! is_paged() ) { ?>
 			<?php printf( '<span class="sticky-post">%1$s</span>', esc_html__( 'Featured', 'white-spektrum' ) ); ?>
 		<?php } ?>
-		<?php Backdrop\Theme\Entry\display_title(); ?>
+		<?php Backdrop\Post\display_title( [ 'class' => 'entry-title' ] ); ?>
 		<div class="entry-metadata">
-			<?php Backdrop\Theme\Entry\display_author(); ?>
-			<?php Backdrop\Theme\Entry\display_date( [  'before' => WhiteSpektrum\sep() ] ); ?>
-			<?php Backdrop\Theme\Entry\display_comments_link( [  'before' => WhiteSpektrum\sep() ] ); ?>
+			<?php Backdrop\Post\display_author( [ 'class' => 'entry-author' ] ); ?>
+			<?php Backdrop\Post\display_date( [ 'class' => 'entry-published', 'before' => WhiteSpektrum\sep() ] ); ?>
+			<?php Backdrop\Post\display_comments_link( [ 'class' => 'entry-comments', 'before' => WhiteSpektrum\sep() ] ); ?>
 		</div>
 	</header>
 	<?php if ( has_post_thumbnail() ) { ?>

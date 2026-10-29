@@ -14,7 +14,7 @@
  */
 namespace WhiteSpektrum;
 
-use function Backdrop\Theme\is_classicpress;
+use function Backdrop\is_classicpress;
 use function Backdrop\Fonts\enqueue;
 
 /**

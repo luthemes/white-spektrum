@@ -58,7 +58,7 @@ class Customize extends Customizable {
 
         $manager->add_setting( 'theme_content_global_layout' , [
 			'default'           => 'left-sidebar',
-			'sanitize_callback' => 'Backdrop\Customize\Helpers\Sanitize::layouts',
+			'sanitize_callback' => 'WhiteSpektrum\Customize\Sanitize::layouts',
         ] );
 	}
 
@@ -72,12 +72,18 @@ class Customize extends Customizable {
 	 */
 	public function registerControls( WP_Customize_Manager $manager ) {
 
+		// `%1$s` is replaced with the parent theme URI by the control.
 		$args = [
-			'type'        => 'radio-image',
-			'choices'     => [
-				'left-sidebar'  => get_theme_file_uri( 'public/images/2cl.png' ),
-				'right-sidebar' => get_theme_file_uri( 'public/images/2cr.png' ),
-			]
+			'choices' => [
+				'left-sidebar'  => [
+					'url'   => '%1$s/public/images/2cl.png',
+					'label' => esc_html__( 'Left Sidebar', 'white-spektrum' ),
+				],
+				'right-sidebar' => [
+					'url'   => '%1$s/public/images/2cr.png',
+					'label' => esc_html__( 'Right Sidebar', 'white-spektrum' ),
+				],
+			],
 		];
 
 		$manager->add_control( new RadioImage( $manager, 'theme_content_global_layout', array_merge( $args, [

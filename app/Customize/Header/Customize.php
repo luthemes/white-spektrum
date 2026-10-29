@@ -40,8 +40,13 @@ class Customize extends Customizable {
 	 * @return void
 	 */
 	public function registerSections( WP_Customize_Manager $manager ) {
-        $manager->get_section( 'colors' )->panel = 'theme_header';
-        $manager->get_section( 'header_image' )->panel = 'theme_header';
+		// The framework removes the core `Colors` section and moves `Header Image` into the
+		// `Theme: Header` panel, so the header text color gets a section of its own.
+		$manager->add_section( 'theme_header_colors', [
+			'title'    => esc_html__( 'Colors', 'white-spektrum' ),
+			'panel'    => 'theme_header',
+			'priority' => 30,
+		] );
 
     }
 
@@ -70,7 +75,13 @@ class Customize extends Customizable {
 	 */
 	public function registerControls( WP_Customize_Manager $manager ) {
 
-    }
+		$header_textcolor = $manager->get_control( 'header_textcolor' );
+
+		if ( $header_textcolor ) {
+			$header_textcolor->section  = 'theme_header_colors';
+			$header_textcolor->priority = 5;
+		}
+	}
 
 	/**
 	 * Registers customizer partials.
