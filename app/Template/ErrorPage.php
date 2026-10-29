@@ -4,11 +4,11 @@
  *
  * Handles outputting the title and content for the 404 Not Found error page.
  *
- * @package   Prismatic
+ * @package   White Spektrum
  * @author    Benjamin Lu <benlumia007@gmail.com>
  * @copyright 2024 Benjamin Lu
  * @license   https://www.gnu.org/licenses/gpl-2.0.html
- * @link      https://luthemes.com/portfolio/prismatic
+ * @link      https://luthemes.com/portfolio/white-spektrum
  */
 
 namespace WhiteSpektrum\Template;
