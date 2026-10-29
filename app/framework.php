@@ -36,7 +36,6 @@ $theme = function_exists( 'Backdrop\booted' ) && Backdrop\booted()
 # bootstrapping process.
 
 $theme->provider( Backdrop\Fonts\Provider::class );
-$theme->provider( Backdrop\Mix\Provider::class );
 
 # ------------------------------------------------------------------------------
 # Register additional service providers with the application.
@@ -52,6 +51,7 @@ $theme->provider( WhiteSpektrum\CleanWP\Provider::class );
 $theme->provider( WhiteSpektrum\Customize\Provider::class );
 $theme->provider( WhiteSpektrum\FeatureImage\Provider::class );
 $theme->provider( WhiteSpektrum\Settings\Provider::class );
+$theme->provider( WhiteSpektrum\Vite\Provider::class );
 
 # ------------------------------------------------------------------------------
 # Perform bootstrap actions.

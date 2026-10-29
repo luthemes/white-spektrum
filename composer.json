@@ -19,8 +19,7 @@
 	"require": {
 		"php": ">=7.4",
 		"backdrop-dev/fonts": "dev-develop",
-		"backdrop-dev/framework": "dev-develop",
-		"backdrop-dev/mix": "dev-develop"
+		"backdrop-dev/framework": "dev-develop"
 	},
 	"require-dev": {
 		"dealerdirect/phpcodesniffer-composer-installer": "*",

@@ -13,7 +13,7 @@
  */
 namespace WhiteSpektrum;
 
-use function Backdrop\Mix\asset;
+use function WhiteSpektrum\Vite\asset;
 
 /**
  * Enqueue Scripts and Styles
@@ -27,17 +27,25 @@ use function Backdrop\Mix\asset;
  */
 add_action( 'wp_enqueue_scripts', function() {
 
+	// Assets are enqueued by their source path. `WhiteSpektrum\Vite\asset()` looks them up in
+	// Vite's manifest.json, which maps them to the built files, whose names change with their
+	// contents.
+
 	// Rather than enqueue the main style.css stylesheet, we are going to enqueue screen.css.
-	wp_enqueue_style( 'white-spektrum-screen', asset( 'assets/css/screen.css' ), null, null );
+	wp_enqueue_style( 'white-spektrum-screen', asset( 'resources/scss/screen.scss' ), null, null );
 
 	// Enqueue theme scripts
-	wp_enqueue_script( 'white-spektrum-app', asset( 'assets/js/app.js' ), [ 'jquery' ], null, true );
+	wp_enqueue_script( 'white-spektrum-app', asset( 'resources/js/app.js' ), [ 'jquery' ], null, true );
 
-	// Enqueue Navigation.
-	wp_enqueue_script( 'white-spektrum-navigation', asset( 'assets/js/navigation.js' ), null, null, true );
+	// Enqueue Navigation. It uses jQuery to hide the menu toggle on scroll.
+	wp_enqueue_script( 'white-spektrum-navigation', asset( 'resources/js/navigation.js' ), [ 'jquery' ], null, true );
+
+	// Screen reader text for the menu toggles. `navigation.js` sets these as plain text.
 	wp_localize_script( 'white-spektrum-navigation', 'whiteSpektrumScreenReaderText', [
-		'expand'   => '<span class="screen-reader-text">' . esc_html__( 'expand child menu', 'white-spektrum' ) . '</span>',
-		'collapse' => '<span class="screen-reader-text">' . esc_html__( 'collapse child menu', 'white-spektrum' ) . '</span>',
+		'expandMain'    => __( 'Open the main menu', 'white-spektrum' ),
+		'collapseMain'  => __( 'Close the main menu', 'white-spektrum' ),
+		'expandChild'   => __( 'expand child menu', 'white-spektrum' ),
+		'collapseChild' => __( 'collapse child menu', 'white-spektrum' ),
 	] );
 
 	// Load WordPress' comment-reply script where appropriate.

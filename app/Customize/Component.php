@@ -16,7 +16,7 @@ namespace WhiteSpektrum\Customize;
 use Backdrop\Customize\Component as BaseComponent;
 use WP_Customize_Manager;
 
-use function Backdrop\Mix\asset;
+use function WhiteSpektrum\Vite\asset;
 
 /**
  * Handles setting up everything we need for the customizer.
@@ -78,7 +78,7 @@ class Component extends BaseComponent {
 	 */
 	public function controlsEnqueue() {
 
-		wp_enqueue_style( 'white-spektrum-customize-controls', asset( 'assets/css/customize-controls.css' ), [], null );
-		wp_enqueue_script( 'white-spektrum-customize-controls', asset( 'assets/js/customize-controls.js' ), [ 'customize-controls' ], null, true );
+		wp_enqueue_style( 'white-spektrum-customize-controls', asset( 'resources/scss/customize-controls.scss' ), [], null );
+		wp_enqueue_script( 'white-spektrum-customize-controls', asset( 'resources/js/customize-controls.js' ), [ 'customize-controls' ], null, true );
 	}
 }
