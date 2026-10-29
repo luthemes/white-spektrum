@@ -1,6 +1,6 @@
 # Change Log
 
-## 0.1.0 - 10.28.2026
+## 0.0.2 - 10.29.2026
 ### Breaking
 These affect child themes and custom code; the theme's own settings carry over.
 - Requires WordPress 5.9 or later (ClassicPress 2.0 or later) and PHP 7.4 or later.

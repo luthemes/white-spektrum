@@ -21,7 +21,7 @@ jobs:
                   node-version: 24
 
             # The release tag (without a leading "v") must match the `Version:` header in
-            # style.css, and the zip is named "{repo}.{version}.zip", e.g. white-spektrum.0.1.0.zip.
+            # style.css, and the zip is named "{repo}.{version}.zip", e.g. white-spektrum.0.0.2.zip.
             - name: Resolve version
               id: version
               run: |
