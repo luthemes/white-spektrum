@@ -1,5 +1,12 @@
 # Change Log
 
+## 0.0.10 - 11.02.2026
+### Added
+- The translation template, `public/lang/white-spektrum.pot`, now includes the strings that come from the Backdrop framework, such as the pagination's Previous and Next, "Search results for: %s", "Archives" and the customizer's Theme: panels. The framework translates them through the theme's own text domain, so they are translated along with the rest of the theme; until now they were missing from the template, so they stayed in English.
+
+### Note
+- The version is 0.0.10 because 0.0.3 to 0.0.9 are still held by White Spektrum releases from 2020.
+
 ## 0.0.2 - 10.29.2026
 ### Breaking
 These affect child themes and custom code; the theme's own settings carry over.
